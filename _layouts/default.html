@@ -6,6 +6,8 @@
 {% include head.html %}
 
 <body class="{{ page.body }}">
+  {% include banner.html %}
+  {% include header.html includeSearch=false %}
   {{ content }}
   <script src="{{ "/assets/uswds/js/uswds.min.js" | relative_url }}"></script>
 </body>

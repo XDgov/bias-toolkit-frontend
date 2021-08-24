@@ -1,6 +1,17 @@
-title: USWDS Sandbox
+title: Bias Toolkit
 baseurl: ""
 url: ""
+
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+
+defaults:
+  - scope:
+      path: "_tools"
+    values:
+      layout: "tool"
 
 exclude:
   - assets/js/src
