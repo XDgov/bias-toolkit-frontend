@@ -19,3 +19,12 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
+
+$color-brand-blue: #112e51;
+$color-brand-teal: #13E1BF;
+$color-brand-purple: #3E375A;
+
+
+.my-class {
+   color: $color-brand-blue;
+}
