@@ -8,7 +8,12 @@
 <body class="{{ page.body }}">
   {% include banner.html %}
   {% include header.html includeSearch=false %}
-  {{ content }}
+  <main id="main-content">
+    <div class="grid-container">
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
   <script src="{{ "/assets/uswds/js/uswds.min.js" | relative_url }}"></script>
 </body>
 </html>

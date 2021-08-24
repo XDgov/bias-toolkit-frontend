@@ -9,3 +9,20 @@ primary:
         href: /tools/model-cards
   - text: About
     href: /about
+
+footer:
+  title: Helpful Links
+  links: 
+    - text: Resources
+      href: /resources
+    - text: About
+      href: /about
+    - text: Privacy Policy
+      href: '#'
+      isExternal: true
+    - text: Accessibility
+      href: '#'
+      isExternal: true
+    - text: Github
+      href: '#'
+      isExternal: true
