@@ -24,7 +24,12 @@ $color-brand-blue: #112e51;
 $color-brand-teal: #13E1BF;
 $color-brand-purple: #3E375A;
 
+.site-heading--small {
+   @include u-color('base');
+   @include u-text('uppercase', 'normal');
+   @include u-font('sans', 'xs')
+}
 
-.my-class {
-   color: $color-brand-blue;
+.site-button-link {
+
 }
