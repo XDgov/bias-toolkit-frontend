@@ -13,6 +13,9 @@ defaults:
     values:
       layout: "tool"
 
+plugins:
+  - jekyll-sitemap
+
 exclude:
   - assets/js/src
   - Gemfile*
