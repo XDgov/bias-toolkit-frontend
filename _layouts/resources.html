@@ -5,23 +5,7 @@ layout: default
 <section class="margin-bottom-8">
     <h2 class="site-heading--small">Featured Resource</h2>
     <div class="usa-card site-card site-card--featured">
-      <div class="usa-card__container margin-x-0">
-        <header class="usa-card__header">
-          <h3 class="usa-card__heading">
-            {{ featured.display-title }}
-          </h3>
-        </header>
-        <div class="usa-card__body">
-          <p>
-            {{ featured.details }}
-          </p>
-        </div>
-        <div class="usa-card__footer">
-          <a class="site-button-link" href="{{ featured.url }}">
-            View Resource
-          </a>
-        </div>
-      </div>
+      {% include resource-card__container.html data=featured %}
     </div>
 </section>
 
@@ -31,21 +15,7 @@ layout: default
     {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
     {% for tool in nonFeatured %}
       <li class="tablet:grid-col-4 usa-card site-card">
-        <div class="usa-card__container">
-          <header class="usa-card__header">
-            <h3 class="usa-card__heading">{{ tool.display-title }}</h2>
-          </header>
-          <div class="usa-card__body">
-            <p>
-              {{ tool.details }}
-            </p>
-          </div>
-          <div class="usa-card__footer">
-            <a class="site-button-link" href="{{ tool.url }}">
-              View Resource
-            </a>
-          </div>
-        </div>
+        {% include resource-card__container.html data=tool %}
       </li>
     {% endfor %}
   </ul>

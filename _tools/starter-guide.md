@@ -9,6 +9,8 @@ details: Get started with an introduction to major concepts in bias and AI
 github: 
 
 featured: true
+tags:
+  - thing
 ---
 
 ## Overview

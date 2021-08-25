@@ -7,6 +7,11 @@ agency-partners:
     href: https://www.census.gov/
 
 github: 
+tags:
+  - techniques
+
+featured: false
+
 ---
 
 ## Overview
