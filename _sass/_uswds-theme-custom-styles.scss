@@ -33,3 +33,12 @@ $color-brand-purple: #3E375A;
 .site-button-link {
 
 }
+
+.site-card {
+   .usa-card__container {
+      box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.56);
+   }
+   &--featured {
+      
+   }
+}
