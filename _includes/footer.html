@@ -1,0 +1,56 @@
+{% assign data = site.data.nav.footer %}
+
+<footer class="usa-footer">
+  {% comment %}
+    <!-- <div class="grid-container usa-footer__return-to-top">
+      <a href="#">Return to top</a>
+    </div> -->
+  {% endcomment %}
+  <div class="usa-footer__primary-section">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <div class="grid-row grid-gap display-flex flex-row">
+        <div class="mobile-lg:grid-col-6 desktop:grid-col-2">
+          <em class="usa-logo__text">
+            <a href="{{ site.baseurl }}" title="{{ site.title }}">
+              {{ site.title }}
+            </a>
+          </em>
+        </div>
+        <div class="mobile-lg:grid-col-6 desktop:grid-col-2">
+          <em class="usa-logo__text">
+            <a href="{{ site.baseurl }}" title="Census Logo">
+              CENSUS LOGO
+            </a>
+          </em>
+        </div>
+        <div class="mobile-lg:grid-col-6 desktop:grid-col-2">
+          <span>{{ data.title }}</span>
+          <ul>
+          {% for link in data.links %}
+            <li>
+              <a 
+                class="usa-footer__secondary-link" 
+                href="{% unless link.isExternal %}{{ site.baseurl }}{% endunless %}{{ link.href }}"
+              >
+                {{ link.text }}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div class="tablet:grid-col-6">
+          <div class="usa-sign-up">
+            <h3 class="usa-sign-up__heading">Sign up</h3>
+            <form class="usa-form">
+              <label class="usa-label" for="email" id="">Your email address</label>
+              <input class="usa-input" id="email" name="email" type="email">
+              <button class="usa-button" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</footer>

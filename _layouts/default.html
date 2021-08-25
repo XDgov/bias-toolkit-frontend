@@ -6,7 +6,14 @@
 {% include head.html %}
 
 <body class="{{ page.body }}">
-  {{ content }}
+  {% include banner.html %}
+  {% include header.html includeSearch=false %}
+  <main id="main-content" class="padding-y-10">
+    <div class="grid-container">
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
   <script src="{{ "/assets/uswds/js/uswds.min.js" | relative_url }}"></script>
 </body>
 </html>

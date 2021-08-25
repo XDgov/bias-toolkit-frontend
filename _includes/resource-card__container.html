@@ -1,0 +1,25 @@
+{% assign data = include.data %}
+<div class="usa-card__container site-card__container {% if data.featured %}site-card__container--accent{% endif %}">
+  <header class="usa-card__header display-flex flex-column">
+    <h3 class="usa-card__heading">
+      {{ data.display-title }}
+    </h3>
+    {% if data.tags %}
+      <ul class="usa-collection__meta site-card__meta {% if data.featured %}site-card__meta--accent{% endif %}" aria-label="Topics">
+        {% for tag in data.tags %}
+          <li class="usa-collection__meta-item usa-tag">{{ tag | capitalize }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+  <div class="usa-card__body">
+    <p>
+      {{ data.details }}
+    </p>
+  </div>
+  <div class="usa-card__footer">
+    <a class="site-button-link {% if data.featured %}site-button-link--accent{% endif %}" href="{{ data.url }}">
+      View Resource
+    </a>
+  </div>
+</div>
