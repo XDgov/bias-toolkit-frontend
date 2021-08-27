@@ -1,4 +1,4 @@
 ---
 layout: resources
-permalink: /resources
+permalink: /resources/
 ---

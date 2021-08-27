@@ -7,25 +7,25 @@
     </div> -->
   {% endcomment %}
   <div class="usa-footer__primary-section usa-section--dark">
-    <nav class="usa-footer__nav" aria-label="Footer navigation">
+    <nav class="usa-footer__nav padding-y-6" aria-label="Footer navigation">
       <div class="grid-row grid-gap display-flex flex-row">
-        <div class="mobile-lg:grid-col-6 desktop:grid-col-2">
+        <div class="grid-col-4">
           <em class="usa-logo__text">
             <a href="{{ site.baseurl }}" title="{{ site.title }}">
               {{ site.title }}
             </a>
           </em>
         </div>
-        <div class="mobile-lg:grid-col-6 desktop:grid-col-2">
+        <div class="grid-col-4">
           <em class="usa-logo__text">
             <a href="{{ site.baseurl }}" title="Census Logo">
               CENSUS LOGO
             </a>
           </em>
         </div>
-        <div class="mobile-lg:grid-col-6 desktop:grid-col-2">
+        <div class="grid-col-4">
           <span>{{ data.title }}</span>
-          <ul>
+          <ul class="margin-top-1 usa-list">
           {% for link in data.links %}
             <li>
               <a 
@@ -38,18 +38,6 @@
           {% endfor %}
           </ul>
         </div>
-
-        <div class="tablet:grid-col-6">
-          <div class="usa-sign-up">
-            <h3 class="usa-sign-up__heading">Sign up</h3>
-            <form class="usa-form">
-              <label class="usa-label" for="email" id="">Your email address</label>
-              <input class="usa-input" id="email" name="email" type="email">
-              <button class="usa-button" type="submit">Sign up</button>
-            </form>
-          </div>
-        </div>
-
       </div>
     </nav>
   </div>

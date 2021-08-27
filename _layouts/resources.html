@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% if content %}
+  <section class="margin-bottom-6">
+    {{content}}
+  </section>
+{% endif %}
+
 {% assign featured = site.tools | where_exp: "tool", "tool.featured == true" | first %}
 <section class="margin-bottom-8">
     <h2 class="site-heading--small">Featured Resource</h2>

@@ -1,8 +1,10 @@
 ---
-layout: home
-body:
+layout: resources
+permalink: /
 ---
 
-<div class="padding-2">
-  <p class="my-class">hi.</p>
-</div>
+# {{site.title}}
+
+## Why We Made This
+
+## How to Get Involved
