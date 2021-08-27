@@ -2,6 +2,8 @@
 display-title: Starter Guide
 details: Get started with an introduction to major concepts in bias and AI
 
+layout: default
+
 # agency-partners:
 #   - text: U.S. Census Bureau
 #     href: https://www.census.gov/
