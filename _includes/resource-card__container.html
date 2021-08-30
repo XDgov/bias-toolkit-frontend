@@ -18,7 +18,9 @@
     </p>
   </div>
   <div class="usa-card__footer">
-    <a class="site-button-link {% if data.featured %}site-button-link--accent{% endif %}" href="{{ data.url }}">
+    <a 
+      class="site-button-link {% if data.featured %}site-button-link--accent{% endif %}" 
+      href="{{site.baseurl}}{{ data.url }}">
       View Resource
     </a>
   </div>
