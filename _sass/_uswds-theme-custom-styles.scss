@@ -97,3 +97,7 @@ i.e.
    }
 }
 
+.site--centered {
+   width: max-content;
+   @include u-margin-x('auto');
+}

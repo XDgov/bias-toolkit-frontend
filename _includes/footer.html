@@ -11,32 +11,40 @@
       <div class="grid-row grid-gap display-flex flex-row">
         <div class="grid-col-4">
           <em class="usa-logo__text">
-            <a href="{{ site.baseurl }}" title="{{ site.title }}">
-              {{ site.title }}
+            <a href="{{ site.baseurl }}" title="{{ site.title }}" class="text-no-underline">
+              <div class="display-flex flex-row flex-align-center flex-justify-center">
+                <img src="{{site.baseurl}}/assets/img/xd-logo-white.svg" alt="xd.gov logo" class="maxh-8"/>
+                <span>xD</span>
+              </div>
             </a>
           </em>
         </div>
-        <div class="grid-col-4">
+        <div class="grid-col-8 mobile-lg:grid-col-4 text-center">
           <em class="usa-logo__text">
             <a href="{{ site.baseurl }}" title="Census Logo">
-              CENSUS LOGO
+              <img 
+                src="{{site.baseurl}}/assets/img/census-logo.png" 
+                alt="United States Census Bureau logo" 
+                class="maxh-8"/>
             </a>
           </em>
         </div>
-        <div class="grid-col-4">
-          <span>{{ data.title }}</span>
-          <ul class="margin-top-1 usa-list">
-          {% for link in data.links %}
-            <li>
-              <a 
-                class="usa-footer__secondary-link" 
-                href="{% unless link.isExternal %}{{ site.baseurl }}{% endunless %}{{ link.href }}"
-              >
-                {{ link.text }}
-              </a>
-            </li>
-          {% endfor %}
-          </ul>
+        <div class="mobile-lg:grid-col-4 margin-top-2 mobile-lg:margin-top-neg-2">
+          <div class="site--centered">
+            <span>{{ data.title }}</span>
+            <ul class="usa-list margin-top-1">
+            {% for link in data.links %}
+              <li>
+                <a 
+                  class="usa-footer__secondary-link" 
+                  href="{% unless link.isExternal %}{{ site.baseurl }}{% endunless %}{{ link.href }}"
+                >
+                  {{ link.text }}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

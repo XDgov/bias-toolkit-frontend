@@ -16,9 +16,9 @@ layout: default
   <div>
     {% if page.agency-partners %}
       <span class="text-base text-sans-sm">Agency Partners:</span>
-      <span class="text-indigo text-sans-sm">
+      <span class="text-sans-sm">
         {% for partner in page.agency-partners %}
-          <a href="{{ partner.href }}">{{ partner.text }}</a>
+          <a class="usa-link" href="{{ partner.href }}">{{ partner.text }}</a>
         {% endfor %}
       </span>
     {% endif %}
