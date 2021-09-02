@@ -44,7 +44,12 @@ i.e.
       }
    }
    &::after {
-      content:'>';
+      content: ' ';
+      background-image: url(/assets/img/arrow-white.svg);
+      background-size: 24px 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0 0.75em;
       @include u-bg('primary');
       @include u-radius('pill');
       color: white;
