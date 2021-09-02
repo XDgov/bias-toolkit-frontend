@@ -43,8 +43,14 @@ h2 {
    @include u-bg('white');
    text-decoration: none;
    @include u-text('bold');
-   @include u-border('2px', 'solid', 'primary');
+   @include u-border('05', 'solid', 'primary');
    @include u-color('primary');
+   &:visited {
+      border-color: color('violet-70v');
+      &::after {
+         background-color: color('violet-70v');
+      }
+   }
    &:hover, &:active {
       @include u-border('primary-dark');
       @include u-color('primary-dark');
@@ -77,6 +83,11 @@ h2 {
       }
       &:hover, &:active {
          @include u-color('secondary-dark');
+         &::after {
+            @include u-bg('accent-cool-light');
+         }
+      }
+      &:visited {
          &::after {
             @include u-bg('accent-cool-light');
          }
