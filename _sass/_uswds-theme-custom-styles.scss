@@ -103,6 +103,16 @@ h2 {
       @include u-bg('secondary');
       @include u-color('white');
    }
+
+   // prevent button overflow b/w 640 and 800 pixels by scooting left slightly
+   .site-button-link {
+      @include at-media('tablet') {
+         @include u-margin-left('neg-2');
+      }
+      @include at-media('tablet-lg') {
+         @include u-margin-left(0);
+      }
+   }
 }
 
 .site-card__meta {
