@@ -21,7 +21,7 @@
     <a 
       class="site-button-link {% if data.featured %}site-button-link--accent{% endif %}" 
       href="{{site.baseurl}}{{ data.url }}">
-      View Resource
+      View Resource <span class="usa-sr-only">{{data.display-title}}</span>
     </a>
   </div>
 </div>
