@@ -1,7 +1,7 @@
 {% assign data = include.data %}
 <div class="usa-card__container site-card__container {% if data.featured %}site-card__container--accent{% endif %}">
   <header class="usa-card__header display-flex flex-column">
-    <h3 class="usa-card__heading">
+    <h3 class="usa-card__heading font-sans-lg">
       {{ data.display-title }}
     </h3>
     {% if data.tags %}
@@ -17,11 +17,11 @@
       {{ data.details }}
     </p>
   </div>
-  <div class="usa-card__footer">
+  <div class="usa-card__footer margin-bottom-2">
     <a 
       class="site-button-link {% if data.featured %}site-button-link--accent{% endif %}" 
       href="{{site.baseurl}}{{ data.url }}">
-      View Resource
+      View Resource <span class="usa-sr-only">{{data.display-title}}</span>
     </a>
   </div>
 </div>

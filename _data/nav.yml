@@ -13,10 +13,6 @@ primary:
 footer:
   title: Helpful Links
   links: 
-    # - text: Resources
-    #   href: /resources
-    # - text: About
-    #   href: /about
     - text: Privacy Policy
       href: 'https://www.census.gov/about/policies/privacy.html'
       isExternal: true
@@ -24,5 +20,5 @@ footer:
       href: 'https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility'
       isExternal: true
     - text: Github
-      href: 'https://github.com/uscensusbureau/bias-toolkit-frontend'
+      href: 'https://github.com/XDgov/bias-toolkit-frontend'
       isExternal: true

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<p class="site-heading--small">RESOURCE</p>
+<p class="site-heading site-heading--xs">RESOURCE</p>
 {% if page.tags %}
   <ul class="usa-collection__meta site-card__meta {% if page.featured %}site-card__meta--accent{% endif %}" aria-label="Topics">
     {% for tag in page.tags %}
@@ -12,25 +12,26 @@ layout: default
 {% endif %}
 
 <h1 class="font-sans-3xl">{{ page.display-title | default: page.title }}</h1>
-<div class="display-flex flex-row flex-justify">
-  <div>
-    {% if page.agency-partners %}
+<div class="grid-row flex-align-center">
+  {% if page.agency-partners %}
+    <div class="grid-col-6">
       <span class="text-base text-sans-sm">Agency Partners:</span>
-      <span class="text-indigo text-sans-sm">
+      <span class="text-sans-sm">
         {% for partner in page.agency-partners %}
-          <a href="{{ partner.href }}">{{ partner.text }}</a>
+          <a class="usa-link" href="{{ partner.href }}">{{ partner.text }}</a>
         {% endfor %}
       </span>
-    {% endif %}
-  </div>
-  <div>
+    </div>
+  {% endif %}
+  <div class="mobile-lg:grid-col-6 margin-top-4 mobile-lg:margin-top-0">
     <a 
-      class="usa-link site-button-link"
+      class="usa-link site-button-link mobile-lg:float-right"
       href="{{ page.github | default: 'https://github.com/XDgov' }}">
       Go to GitHub
     </a>
   </div>
 </div>
+
 {{ content }}
 
 <div class="margin-top-6">
