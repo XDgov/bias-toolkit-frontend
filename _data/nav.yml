@@ -1,12 +1,16 @@
 primary:
   - text: Resources
     links:
+      - text: All Resources
+        href: /resources
+      - text: Getting Started
+        href: /resources/starter-guide
       - text: Data Generator
-        href: /tools/data-generator
+        href: /resources/data-generator
       - text: Job Posting Bias
-        href: /tools/job-posting-bias
+        href: /resources/job-posting-bias
       - text: Model Cards
-        href: /tools/model-cards
+        href: /resources/model-cards
   - text: About
     href: /about
 

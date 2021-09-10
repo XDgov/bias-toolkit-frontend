@@ -5,7 +5,7 @@ url: ""
 collections:
   tools:
     output: true
-    permalink: /tools/:name/
+    permalink: /resources/:name/
 
 defaults:
   - scope:
