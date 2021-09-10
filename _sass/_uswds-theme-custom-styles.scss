@@ -96,7 +96,8 @@ h2 {
 }
 
 .site-card__container {
-   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.56);
+   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.25);
+   @include u-radius('md');
 
    &--accent {
       @include u-margin-x(0);
