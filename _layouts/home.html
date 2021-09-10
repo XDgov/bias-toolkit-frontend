@@ -1,0 +1,24 @@
+---
+layout: base
+---
+
+<section class="margin-bottom-8">
+  <h2 class="site-heading site-heading--small">Featured Resource</h2>
+  <div class="usa-card site-card site-card--featured">
+    {% include resource-card__container.html data=featured %}
+  </div>
+</section>
+
+<section class="bg-base-lightest">
+  <div class="grid-container">
+    <h2 class="site-heading">Popular Resources</h2>
+    <ul class="usa-card-group">
+      {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
+      {% for tool in nonFeatured %}
+        <li class="tablet:grid-col-4 usa-card site-card">
+          {% include resource-card__container.html data=tool %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

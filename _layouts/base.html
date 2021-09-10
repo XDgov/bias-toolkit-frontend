@@ -1,0 +1,17 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+
+<body class="{{ page.body }}">
+  {% include banner.html %}
+  {% include header.html includeSearch=false %}
+  <main id="main-content" class="padding-y-10">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ "/assets/uswds/js/uswds.min.js" | relative_url }}"></script>
+</body>
+</html>

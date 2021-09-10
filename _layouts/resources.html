@@ -16,7 +16,7 @@ layout: default
 </section>
 
 <section>
-  <h2 class="site-heading site-heading--small">Most Popular</h2>
+  <h2 class="site-heading site-heading--small">"Most Popular"</h2>
   <ul class="usa-card-group">
     {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
     {% for tool in nonFeatured %}

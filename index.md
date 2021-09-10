@@ -1,5 +1,5 @@
 ---
-layout: resources
+layout: home
 permalink: /
 ---
 
