@@ -139,3 +139,12 @@ h2 {
    width: max-content;
    @include u-margin-x('auto');
 }
+
+.site-radial {
+   position: absolute;
+   right: 0px;
+   width: 30vw;
+   height: 350px;
+   background: rgb(253,68,150);
+   background: linear-gradient(328deg, rgba(253,68,150,1) 0%, rgba(169,183,255,1) 40%, rgba(131,252,212,1) 100%);
+}

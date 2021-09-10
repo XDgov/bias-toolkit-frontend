@@ -2,11 +2,23 @@
 layout: base
 ---
 
-<section class="margin-bottom-8">
-  <h2 class="site-heading site-heading--small">Featured Resource</h2>
-  <div class="usa-card site-card site-card--featured">
-    {% include resource-card__container.html data=featured %}
+<div class="site-radial">
+</div>
+<section class="padding-bottom-6">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="mobile-lg:grid-col-8">
+        <h1 class="maxw-mobile">{{ page.title }}</h1>
+        <p class="margin-bottom-6">{{ page.subtitle }}</p>
+        <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
+      </div>
+    </div>
+
+    
   </div>
+
+
+  
 </section>
 
 <section class="bg-base-lightest">

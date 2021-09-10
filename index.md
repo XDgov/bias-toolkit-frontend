@@ -1,6 +1,9 @@
 ---
 layout: home
 permalink: /
+
+title: 'Combating Bias Toolkit'
+subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and mitigate bias in their data and algorithms.
 ---
 
 # {{site.title}}
