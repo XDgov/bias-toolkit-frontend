@@ -1,6 +1,0 @@
-# _resources
-
-This folder contains the files for the `/resources` section of the site.
-
-As set in `_config.yml`, files in this directory have a few defaults pre-configured:
- - their layout is set to `_layouts/resource.html`
