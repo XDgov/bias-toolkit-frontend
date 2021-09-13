@@ -9,7 +9,7 @@ layout: base
 <section class="padding-y-6">
   <div class="grid-container grid-row">
     <div class="mobile-lg:grid-col-6">
-      <span class="site-heading site-heading--xs">{{ page.hero.pre-header }}</span>
+      <span class="site-heading site-heading--xs site-topper site-topper--accent">{{ page.hero.pre-header }}</span>
       <h1 class="maxw-mobile margin-top-1">{{ page.hero.title }}</h1>
       <p class="margin-bottom-6">{{ page.hero.subtitle }}</p>
       {% assign button = buttons[0] %}
@@ -31,7 +31,7 @@ layout: base
 <section class="padding-y-6">
   <div class="grid-container grid-row">
     <div class="mobile-lg:grid-col-6">
-      <h2 class="maxw-mobile">{{ page.second-section.title }}</h2>
+      <h2 class="maxw-mobile site-topper site-topper--accent">{{ page.second-section.title }}</h2>
       {{ page.second-section.subtitle | markdownify }}
       {% include button-link.html data=page.second-section.button class="margin-top-4" %}
     </div>
@@ -39,8 +39,8 @@ layout: base
 </section>
 
 <section class="bg-base-lightest padding-y-4">
-  <div class="grid-container">
-    <h2>{{ page.resources-section.title }}</h2>
+  <div class="grid-container grid-row">
+    <h2 class="site-topper">{{ page.resources-section.title }}</h2>
     <ul class="usa-card-group margin-top-4">
       {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
       {% for tool in nonFeatured %}

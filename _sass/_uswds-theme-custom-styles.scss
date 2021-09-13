@@ -36,6 +36,25 @@ h2 {
    }
 }
 
+.site-topper {
+   @include u-margin-top(0);
+   position: relative;
+   &::before {
+      content: '';
+      @include u-bg('primary');
+      height: 10px;
+      width: 50px;
+      position: absolute;
+      top: -13px;
+   }
+   &--accent {
+      @extend .site-topper;
+      &::before {
+         @include u-bg('accent-cool-lighter');
+      }
+   }
+}
+
 .site-button-link {
    @include u-padding-x(1.5);
    @include u-padding-y(1);
@@ -71,7 +90,6 @@ h2 {
       @include u-bg('primary');
       @include u-radius('pill');
       color: white;
-      @include u-padding-x(1);
       @include u-margin-left(1);
       transition: all 100ms ease;
    }
