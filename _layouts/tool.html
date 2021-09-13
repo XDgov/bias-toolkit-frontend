@@ -23,21 +23,25 @@ layout: default
       </span>
     </div>
   {% endif %}
-  <div class="mobile-lg:grid-col-6 margin-top-4 mobile-lg:margin-top-0">
-    <a 
-      class="usa-link site-button-link mobile-lg:float-right"
-      href="{{ page.github | default: 'https://github.com/XDgov' }}">
-      Go to GitHub
-    </a>
-  </div>
+  {% if page.github %}
+    <div class="mobile-lg:grid-col-6 margin-top-4 mobile-lg:margin-top-0">
+      <a 
+        class="usa-link site-button-link mobile-lg:float-right"
+        href="{{ page.github }}">
+        Go to GitHub
+      </a>
+    </div>
+  {% endif %}
 </div>
 
 {{ content }}
 
-<div class="margin-top-6">
-  <a 
-    class="usa-link site-button-link"
-    href="{{ page.github | default: 'https://github.com/XDgov' }}">
-    Go to GitHub
-  </a>
-</div>
+{% if page.github %}
+  <div class="margin-top-6">
+    <a 
+      class="usa-link site-button-link"
+      href="{{ page.github }}">
+      Go to GitHub
+    </a>
+  </div>
+{% endif %}

@@ -42,8 +42,8 @@ layout: base
   <div class="grid-container grid-row">
     <h2 class="site-topper">{{ page.resources-section.title }}</h2>
     <ul class="usa-card-group">
-      {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
-      {% for tool in nonFeatured %}
+      {% assign popularTools = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
+      {% for tool in popularTools %}
         <li class="tablet:grid-col-4 usa-card site-card">
           {% include resource-card__container.html data=tool %}
         </li>

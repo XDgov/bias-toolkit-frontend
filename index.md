@@ -1,4 +1,7 @@
 ---
+# This page is controlled by frontmatter and _layouts/home.html
+# It does not display any markdown.
+
 layout: home
 permalink: /
 
@@ -6,13 +9,14 @@ hero:
   pre-header: Learn &#183; Build &#183; Change
   title: 'Combating Bias Toolkit'
   subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and mitigate bias in their data and algorithms.
-  buttons:
+  buttons:  # controls the 3 buttons in the top, hero section
     - text: "Get Started"
       href: '/resources/starter-guide'
     - text: "Practical Resources"
       href: '/resources'
     - text: "About This Toolkit"
       href: '/about'
+      # to change one of these buttons to an external link, add 'isExternal: true' to the object
 
 second-section:
   title: Join the Community
@@ -24,5 +28,5 @@ second-section:
 
 resources-section:
   title: Popular Resources
-
+  # edit _layouts/home.html to control the actual resources which are displayed in this section
 ---

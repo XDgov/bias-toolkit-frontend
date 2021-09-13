@@ -1,18 +1,17 @@
 ---
-display-title: Starter Guide
-details: Get started with an introduction to major concepts in bias and AI
-
 layout: default
 
-# agency-partners:
-#   - text: U.S. Census Bureau
-#     href: https://www.census.gov/
+# text to show on the card
+display-title: Starter Guide  
+details: Get started with an introduction to major concepts in bias and AI
 
-github: 
-
+# whether or not the card is "featured" on the /resources page or homepage
 featured: true
+
+# pills above the title on the card
 tags:
   - thing
+
 ---
 
 # Getting Started
