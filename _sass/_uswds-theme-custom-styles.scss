@@ -163,12 +163,18 @@ h2 {
 .site-gradient {
    position: absolute;
    right: 0px;
-   width: 30vw;
-   height: 350px;
+   width: 40vw;
+   height: 63vh;
    background: rgb(253,68,150);
    background: linear-gradient(328deg, rgba(253,68,150,1) 0%, rgba(169,183,255,1) 40%, rgba(131,252,212,1) 100%);
    @include at-media-max('mobile-lg') {
       display: none;
+   }
+   @include at-media('tablet') {
+      height: 58vh;
+   }
+   @include at-media('tablet-lg') {
+      height: 52vh;
    }
 }
 

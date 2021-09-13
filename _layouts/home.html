@@ -11,24 +11,24 @@ layout: base
     <div class="mobile-lg:grid-col-6">
       <span class="site-heading site-heading--xs site-topper site-topper--accent">{{ page.hero.pre-header }}</span>
       <h1 class="maxw-mobile margin-top-1">{{ page.hero.title }}</h1>
-      <p class="margin-bottom-6">{{ page.hero.subtitle }}</p>
+      <p class="margin-bottom-4">{{ page.hero.subtitle }}</p>
       {% assign button = buttons[0] %}
       {% include button-link.html data=button %}
     </div>
-    <div class="mobile-lg:grid-col-4 mobile-lg:grid-offset-2" id="site-gradient__buttons">
+    <div class="margin-top-3 mobile-lg:margin-top-0 mobile-lg:grid-col-4 mobile-lg:grid-offset-2" id="site-gradient__buttons">
       <div class="">
         {% assign button = buttons[1] %}
         {% include button-link.html data=button %}
       </div>
-      <div class="mobile-lg:margin-left-8 mobile-lg:margin-bottom-10">
+      <div class="margin-top-3 mobile-lg:margin-top-0 mobile-lg:margin-bottom-10">
         {% assign button = buttons[2] %}
-        {% include button-link.html data=button %}
+        {% include button-link.html data=button class="mobile-lg:float-right" %}
       </div>
     </div>
   </div>
 </section>
 
-<section class="padding-y-6">
+<section class="padding-y-6 mobile-lg:margin-top-4">
   <div class="grid-container grid-row">
     <div class="mobile-lg:grid-col-6">
       <h2 class="maxw-mobile site-topper site-topper--accent">{{ page.second-section.title }}</h2>
@@ -38,10 +38,10 @@ layout: base
   </div>
 </section>
 
-<section class="bg-base-lightest padding-y-4">
+<section class="bg-base-lightest padding-y-8">
   <div class="grid-container grid-row">
     <h2 class="site-topper">{{ page.resources-section.title }}</h2>
-    <ul class="usa-card-group margin-top-4">
+    <ul class="usa-card-group">
       {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
       {% for tool in nonFeatured %}
         <li class="tablet:grid-col-4 usa-card site-card">
