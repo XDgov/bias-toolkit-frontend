@@ -2,18 +2,24 @@
 layout: base
 ---
 
-<div class="site-radial">
+<div class="site-gradient">
 </div>
-<section class="padding-bottom-6">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="mobile-lg:grid-col-8">
-        <h1 class="maxw-mobile">{{ page.title }}</h1>
-        <p class="margin-bottom-6">{{ page.subtitle }}</p>
+
+<section class="padding-y-6">
+  <div class="grid-container grid-row">
+    <div class="mobile-lg:grid-col-6">
+      <h1 class="maxw-mobile">{{ page.title }}</h1>
+      <p class="margin-bottom-6">{{ page.subtitle }}</p>
+      <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
+    </div>
+    <div class="mobile-lg:grid-col-4 mobile-lg:grid-offset-2" id="site-gradient__buttons">
+      <div class="mobile-lg:margin-left-8">
+        <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
+      </div>
+      <div class="">
         <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
       </div>
     </div>
-
     
   </div>
 

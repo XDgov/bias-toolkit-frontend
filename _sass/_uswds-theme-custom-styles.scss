@@ -45,6 +45,8 @@ h2 {
    @include u-text('bold');
    @include u-border('05', 'solid', 'primary');
    @include u-color('primary');
+   display: inline-block;
+   width: max-content;
    &:visited {
       border-color: color('violet-70v');
       &::after {
@@ -140,11 +142,22 @@ h2 {
    @include u-margin-x('auto');
 }
 
-.site-radial {
+.site-gradient {
    position: absolute;
    right: 0px;
    width: 30vw;
    height: 350px;
    background: rgb(253,68,150);
    background: linear-gradient(328deg, rgba(253,68,150,1) 0%, rgba(169,183,255,1) 40%, rgba(131,252,212,1) 100%);
+   @include at-media-max('mobile-lg') {
+      display: none;
+   }
+}
+
+#site-gradient__buttons {
+   @include at-media('mobile-lg') {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
 }
