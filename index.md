@@ -3,7 +3,7 @@ layout: home
 permalink: /
 
 hero:
-  pre-header: Learn &#8226; Build &#8226; Change
+  pre-header: Learn &#183; Build &#183; Change
   title: 'Combating Bias Toolkit'
   subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and mitigate bias in their data and algorithms.
   buttons:

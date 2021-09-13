@@ -171,10 +171,7 @@ h2 {
       display: none;
    }
    @include at-media('tablet') {
-      height: 58vh;
-   }
-   @include at-media('tablet-lg') {
-      height: 52vh;
+      height: 54vh;
    }
 }
 
