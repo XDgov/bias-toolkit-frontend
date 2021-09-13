@@ -10,9 +10,9 @@ layout: default
   </section>
 {% endif %}
 
-{% assign featured = site.tools | where_exp: "tool", "tool.featured == true" | first %}
+{% assign featured = site.resources | where_exp: "tool", "tool.featured == true" | first %}
 <section class="margin-bottom-8">
-  <h2 class="site-heading site-heading--small">{{ page.featured-title | default: "Featured Resource" }}</h2>
+  <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "Featured Resource" }}</h2>
   <div class="usa-card site-card site-card--featured">
     {% include resource-card__container.html data=featured %}
   </div>
@@ -21,7 +21,7 @@ layout: default
 <section>
   <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "Most Popular" }}</h2>
   <ul class="usa-card-group">
-    {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
+    {% assign nonFeatured = site.resources | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
     {% for tool in nonFeatured %}
       <li class="tablet:grid-col-4 usa-card site-card">
         {% include resource-card__container.html data=tool %}

@@ -3,21 +3,22 @@ baseurl: ""
 url: ""
 
 collections:
-  tools:
+  resources:
     output: true
     permalink: /resources/:name/
 
 defaults:
   - scope:
-      path: "_tools"
+      path: "_resources"
     values:
-      layout: "tool"
+      layout: "resource"
 
 plugins:
   - jekyll-sitemap
 
 exclude:
   - assets/js/src
+  - _resources/README
   - Gemfile*
   - node_modules
   - package*.json
