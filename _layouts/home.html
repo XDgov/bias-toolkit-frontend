@@ -5,32 +5,43 @@ layout: base
 <div class="site-gradient">
 </div>
 
+{% assign buttons = page.hero.buttons %}
 <section class="padding-y-6">
   <div class="grid-container grid-row">
     <div class="mobile-lg:grid-col-6">
-      <h1 class="maxw-mobile">{{ page.title }}</h1>
-      <p class="margin-bottom-6">{{ page.subtitle }}</p>
-      <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
+      <span class="site-heading site-heading--xs">{{ page.hero.pre-header }}</span>
+      <h1 class="maxw-mobile margin-top-1">{{ page.hero.title }}</h1>
+      <p class="margin-bottom-6">{{ page.hero.subtitle }}</p>
+      {% assign button = buttons[0] %}
+      {% include button-link.html data=button %}
     </div>
     <div class="mobile-lg:grid-col-4 mobile-lg:grid-offset-2" id="site-gradient__buttons">
-      <div class="mobile-lg:margin-left-8">
-        <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
-      </div>
       <div class="">
-        <a class="site-button-link" href="{{ site.tools.starter-guide.url }}">Get Started</a>
+        {% assign button = buttons[1] %}
+        {% include button-link.html data=button %}
+      </div>
+      <div class="mobile-lg:margin-left-8 mobile-lg:margin-bottom-10">
+        {% assign button = buttons[2] %}
+        {% include button-link.html data=button %}
       </div>
     </div>
-    
   </div>
-
-
-  
 </section>
 
-<section class="bg-base-lightest">
+<section class="padding-y-6">
+  <div class="grid-container grid-row">
+    <div class="mobile-lg:grid-col-6">
+      <h2 class="maxw-mobile">{{ page.second-section.title }}</h2>
+      {{ page.second-section.subtitle | markdownify }}
+      {% include button-link.html data=page.second-section.button class="margin-top-4" %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-base-lightest padding-y-4">
   <div class="grid-container">
-    <h2 class="site-heading">Popular Resources</h2>
-    <ul class="usa-card-group">
+    <h2>{{ page.resources-section.title }}</h2>
+    <ul class="usa-card-group margin-top-4">
       {% assign nonFeatured = site.tools | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
       {% for tool in nonFeatured %}
         <li class="tablet:grid-col-4 usa-card site-card">
