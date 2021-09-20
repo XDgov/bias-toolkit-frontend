@@ -20,10 +20,39 @@ i.e.
 ----------------------------------------
 */
 
-.site-heading--small {
+h2 {
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+}
+
+.site-heading {
    @include u-color('base');
    @include u-text('uppercase', 'normal');
-   @include u-font('sans', 'xs')
+   &--small {
+      @include u-font('sans', 'xs')
+   }
+   &--xs {
+      @include u-font('sans', '2xs')
+   }
+}
+
+.site-topper {
+   @include u-margin-top(0);
+   position: relative;
+   &::before {
+      content: '';
+      @include u-bg('primary');
+      height: 10px;
+      width: 50px;
+      position: absolute;
+      top: -13px;
+   }
+   &--accent {
+      @extend .site-topper;
+      &::before {
+         @include u-bg('accent-cool-lighter');
+      }
+   }
 }
 
 .site-button-link {
@@ -33,8 +62,16 @@ i.e.
    @include u-bg('white');
    text-decoration: none;
    @include u-text('bold');
-   @include u-border('2px', 'solid', 'primary');
+   @include u-border('05', 'solid', 'primary');
    @include u-color('primary');
+   display: inline-block;
+   width: max-content;
+   &:visited {
+      border-color: color('violet-70v');
+      &::after {
+         background-color: color('violet-70v');
+      }
+   }
    &:hover, &:active {
       @include u-border('primary-dark');
       @include u-color('primary-dark');
@@ -44,11 +81,15 @@ i.e.
       }
    }
    &::after {
-      content:'>';
+      content: ' ';
+      background-image: url(../../img/arrow-white.svg);
+      background-size: 24px 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0 0.75em;
       @include u-bg('primary');
       @include u-radius('pill');
       color: white;
-      @include u-padding-x(1);
       @include u-margin-left(1);
       transition: all 100ms ease;
    }
@@ -66,16 +107,32 @@ i.e.
             @include u-bg('accent-cool-light');
          }
       }
+      &:visited {
+         &::after {
+            @include u-bg('accent-cool-light');
+         }
+      }
    }
 }
 
 .site-card__container {
-   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.56);
+   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.25);
+   @include u-radius('md');
 
    &--accent {
       @include u-margin-x(0);
       @include u-bg('secondary');
       @include u-color('white');
+   }
+
+   // prevent button overflow b/w 640 and 800 pixels by scooting left slightly
+   .site-button-link {
+      @include at-media('tablet') {
+         @include u-margin-left('neg-2');
+      }
+      @include at-media('tablet-lg') {
+         @include u-margin-left(0);
+      }
    }
 }
 
@@ -87,6 +144,7 @@ i.e.
       @include u-padding-y(1);
       @include u-radius('pill');
       @include u-bg('accent-cool-lighter');
+      @include u-text('bold');
    }
 
    &--accent {
@@ -97,3 +155,30 @@ i.e.
    }
 }
 
+.site--centered {
+   width: max-content;
+   @include u-margin-x('auto');
+}
+
+.site-gradient {
+   position: absolute;
+   right: 0px;
+   width: 40vw;
+   height: 63vh;
+   background: rgb(253,68,150);
+   background: linear-gradient(328deg, rgba(253,68,150,1) 0%, rgba(169,183,255,1) 40%, rgba(131,252,212,1) 100%);
+   @include at-media-max('mobile-lg') {
+      display: none;
+   }
+   @include at-media('tablet') {
+      height: 54vh;
+   }
+}
+
+#site-gradient__buttons {
+   @include at-media('mobile-lg') {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}

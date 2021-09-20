@@ -1,22 +1,22 @@
 primary:
   - text: Resources
     links:
+      - text: All Resources
+        href: /resources
+      - text: Getting Started
+        href: /resources/starter-guide
       - text: Data Generator
-        href: /tools/data-generator
+        href: /resources/data-generator
       - text: Job Posting Bias
-        href: /tools/job-posting-bias
+        href: /resources/job-posting-bias
       - text: Model Cards
-        href: /tools/model-cards
+        href: /resources/model-cards
   - text: About
     href: /about
 
 footer:
   title: Helpful Links
   links: 
-    # - text: Resources
-    #   href: /resources
-    # - text: About
-    #   href: /about
     - text: Privacy Policy
       href: 'https://www.census.gov/about/policies/privacy.html'
       isExternal: true
@@ -24,5 +24,5 @@ footer:
       href: 'https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility'
       isExternal: true
     - text: Github
-      href: 'https://github.com/uscensusbureau/bias-toolkit-frontend'
+      href: 'https://github.com/XDgov/bias-toolkit-frontend'
       isExternal: true

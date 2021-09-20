@@ -1,18 +1,20 @@
 ---
-display-title: Data Generation Tool
-details: This resource covers some basics in sources of bias in data and provides ways to address them.
+layout: default
 
-agency-partners:
-  - text: U.S. Census Bureau
-    href: https://www.census.gov/
+# text to show on the card
+display-title: Starter Guide  
+details: Get started with an introduction to major concepts in bias and AI
 
-github: 
+# whether or not the card is "featured" on the /resources page or homepage
+featured: true
+
+# pills above the title on the card
 tags:
-  - techniques
-
-featured: false
+  - thing
 
 ---
+
+# Getting Started
 
 ## Overview
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

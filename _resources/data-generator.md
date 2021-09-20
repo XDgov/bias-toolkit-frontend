@@ -1,18 +1,20 @@
 ---
-display-title: Starter Guide
-details: Get started with an introduction to major concepts in bias and AI
+# _layouts/tool.html layout set by default in _config.yml
 
-layout: default
+# text to show on the card
+display-title: Data Generation Tool
+details: This resource covers some basics in sources of bias in data and provides ways to address them.
 
-# agency-partners:
-#   - text: U.S. Census Bureau
-#     href: https://www.census.gov/
+agency-partners:
+  - text: U.S. Census Bureau
+    href: https://www.census.gov/
 
-github: 
-
-featured: true
+github: # must be set for links to appear on page
 tags:
-  - thing
+  - techniques
+
+featured: false   # whether or not resource is featured on homepage or /resources. can also be left blank.
+
 ---
 
 ## Overview
