@@ -36,6 +36,25 @@ h2 {
    }
 }
 
+.site-topper {
+   @include u-margin-top(0);
+   position: relative;
+   &::before {
+      content: '';
+      @include u-bg('primary');
+      height: 10px;
+      width: 50px;
+      position: absolute;
+      top: -13px;
+   }
+   &--accent {
+      @extend .site-topper;
+      &::before {
+         @include u-bg('accent-cool-lighter');
+      }
+   }
+}
+
 .site-button-link {
    @include u-padding-x(1.5);
    @include u-padding-y(1);
@@ -45,6 +64,8 @@ h2 {
    @include u-text('bold');
    @include u-border('05', 'solid', 'primary');
    @include u-color('primary');
+   display: inline-block;
+   width: max-content;
    &:visited {
       border-color: color('violet-70v');
       &::after {
@@ -69,7 +90,6 @@ h2 {
       @include u-bg('primary');
       @include u-radius('pill');
       color: white;
-      @include u-padding-x(1);
       @include u-margin-left(1);
       transition: all 100ms ease;
    }
@@ -96,7 +116,8 @@ h2 {
 }
 
 .site-card__container {
-   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.56);
+   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.25);
+   @include u-radius('md');
 
    &--accent {
       @include u-margin-x(0);
@@ -137,4 +158,27 @@ h2 {
 .site--centered {
    width: max-content;
    @include u-margin-x('auto');
+}
+
+.site-gradient {
+   position: absolute;
+   right: 0px;
+   width: 40vw;
+   height: 63vh;
+   background: rgb(253,68,150);
+   background: linear-gradient(328deg, rgba(253,68,150,1) 0%, rgba(169,183,255,1) 40%, rgba(131,252,212,1) 100%);
+   @include at-media-max('mobile-lg') {
+      display: none;
+   }
+   @include at-media('tablet') {
+      height: 54vh;
+   }
+}
+
+#site-gradient__buttons {
+   @include at-media('mobile-lg') {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
 }

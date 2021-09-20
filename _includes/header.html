@@ -1,6 +1,10 @@
 {% assign data = site.data.nav.primary %}
 {% assign includeSearch = include.includeSearch %}
-{% assign pageSlug = page.url | slugify %}
+
+{% assign pageSlug = "" %}
+{% if page.url != "/" %}
+  {% assign pageSlug = page.url | slugify %}
+{% endif %}
 
 <header class="usa-header usa-header--basic">
   <div class="usa-nav-container">

@@ -1,0 +1,6 @@
+{% assign data = include.data %}
+<a 
+  class="site-button-link {{include.class}}" 
+  href="{% unless data.isExternal == true %}{{site.baseurl}}{% endunless %}{{ data.href }}">
+  {{ data.text }}
+</a>

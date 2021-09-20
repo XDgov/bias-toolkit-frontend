@@ -1,4 +1,7 @@
 ---
+# _layouts/tool.html layout set by default in _config.yml
+
+# text to show on the card
 display-title: Data Generation Tool
 details: This resource covers some basics in sources of bias in data and provides ways to address them.
 
@@ -6,11 +9,11 @@ agency-partners:
   - text: U.S. Census Bureau
     href: https://www.census.gov/
 
-github: 
+github: # must be set for links to appear on page
 tags:
   - techniques
 
-featured: false
+featured: false   # whether or not resource is featured on homepage or /resources. can also be left blank.
 
 ---
 
