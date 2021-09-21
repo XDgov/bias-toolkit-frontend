@@ -6,7 +6,7 @@ agency-partners:
   - text: U.S. Census Bureau
     href: https://www.census.gov/
 
-github: https://github.com/USDepartmentofLabor/ableist-language-detector
+github: https://github.com/XDgov/model-card-generator
 tags:
   - tool
 ---
