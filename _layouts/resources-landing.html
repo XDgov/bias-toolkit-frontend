@@ -12,7 +12,7 @@ layout: default
 
 {% assign featured = site.resources | where_exp: "tool", "tool.featured == true" | first %}
 <section class="margin-bottom-8">
-  <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "Featured Resource" }}</h2>
+  <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "Introduction" }}</h2>
   <div class="usa-card site-card site-card--featured">
     {% include resource-card__container.html data=featured %}
   </div>
