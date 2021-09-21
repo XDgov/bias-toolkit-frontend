@@ -20,7 +20,7 @@ layout: default
       <span class="text-base text-sans-sm">Agency Partners:</span>
       <span class="text-sans-sm">
         {% for partner in page.agency-partners %}
-          <a class="usa-link" href="{{ partner.href }}">{{ partner.text }}</a>
+          <a class="usa-link" href="{{ partner.href }}" target="_blank">{{ partner.text }}</a>
         {% endfor %}
       </span>
     </div>
@@ -29,12 +29,15 @@ layout: default
     <div class="mobile-lg:grid-col-6 margin-top-4 mobile-lg:margin-top-0">
       <a 
         class="usa-link site-button-link mobile-lg:float-right"
-        href="{{ page.github }}">
+        href="{{ page.github }}"
+        target="_blank">
         Go to GitHub
       </a>
     </div>
   {% endif %}
 </div>
+
+<h2>{{ page.details  }}</h1>
 
 {{ content }}
 
@@ -42,7 +45,8 @@ layout: default
   <div class="margin-top-6">
     <a 
       class="usa-link site-button-link"
-      href="{{ page.github }}">
+      href="{{ page.github }}"
+      target="_blank">
       Go to GitHub
     </a>
   </div>

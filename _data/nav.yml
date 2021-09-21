@@ -3,14 +3,14 @@ primary:
     links:
       - text: All Resources
         href: /resources
-      - text: Getting Started
-        href: /resources/starter-guide
-      - text: Data Generator
-        href: /resources/data-generator
-      - text: Job Posting Bias
-        href: /resources/job-posting-bias
-      - text: Model Cards
-        href: /resources/model-cards
+      - text: Get Started
+        href: /resources/get-started
+      - text: Data Generation Notebooks
+        href: /resources/data-generation-notebooks
+      - text: Mitigating Bias in Job Postings
+        href: /resources/mitigating-bias-in-job-postings
+      - text: Model Card Generator
+        href: /resources/model-card-generator
   - text: About
     href: /about
 

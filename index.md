@@ -6,12 +6,12 @@ layout: home
 permalink: /
 
 hero:
-  pre-header: Learn &#183; Build &#183; Change
-  title: 'Combating Bias Toolkit'
+  pre-header: Learn &#183; Build &#183; Connect
+  title: 'Bias Toolkit'
   subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and mitigate bias in their data and algorithms.
   buttons:  # controls the 3 buttons in the top, hero section
     - text: "Get Started"
-      href: '/resources/starter-guide'
+      href: '/resources/get-started'
     - text: "Practical Resources"
       href: '/resources'
     - text: "About This Toolkit"
@@ -19,14 +19,14 @@ hero:
       # to change one of these buttons to an external link, add 'isExternal: true' to the object
 
 second-section:
-  title: Join the Community
-  subtitle: Want to do get started combating bias in your team's AI data and tools? Email us at [info@xd.gov](mailto:info@xd.gov), and we'll help you get started.
+  title: Get in Touch
+  subtitle: Do you have questions about bias or AI? Do you have a case study that you’d like to highlight? Or feedback for how this toolkit might better meet your needs? We’d love to hear from you. Email us at [inquiries@xd.gov](mailto:inquiries@xd.gov).
   button:
     text: Email Us
-    href: mailto:info@xd.gov
+    href: mailto:inquiries@xd.gov
     isExternal: true
 
 resources-section:
-  title: Popular Resources
+  title: Featured Resources
   # edit _layouts/home.html to control the actual resources which are displayed in this section
 ---
