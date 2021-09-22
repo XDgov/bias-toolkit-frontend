@@ -65,9 +65,9 @@ unclassed elements:
 ----------------------------------------
 */
 
-$theme-global-paragraph-styles: false;
+$theme-global-paragraph-styles: true;
 $theme-global-link-styles: false;
-$theme-global-content-styles: false;
+$theme-global-content-styles: true;
 
 /*
 ----------------------------------------
@@ -399,7 +399,7 @@ $theme-body-line-height: 5;
 $theme-style-body-element: false;
 
 // Headings
-$theme-h1-font-size: "2xl";
+$theme-h1-font-size: "3xl";
 $theme-h2-font-size: "xl";
 $theme-h3-font-size: "lg";
 $theme-h4-font-size: "sm";
@@ -411,12 +411,12 @@ $theme-display-font-size: "3xl";
 
 // Text and prose
 $theme-text-measure-narrow: 1;
-$theme-text-measure: 4;
-$theme-text-measure-wide: 6;
+$theme-text-measure: none;
+$theme-text-measure-wide: none;
 $theme-prose-font-family: "body";
 
 // Lead text
 $theme-lead-font-family: "heading";
 $theme-lead-font-size: "lg";
-$theme-lead-line-height: 6;
+$theme-lead-line-height: none;
 $theme-lead-measure: 6;
