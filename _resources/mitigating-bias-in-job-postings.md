@@ -7,6 +7,7 @@ agency-partners:
     href: https://www.dol.gov/
 
 github: https://github.com/USDepartmentofLabor/ableist-language-detector
+order: 4
 tags:
   - website
   - tool

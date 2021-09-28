@@ -1,0 +1,44 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+{% if page.collection %}
+    {% assign  document = site[the_collection] | sort: "order" %}
+{% endif %}
+
+{% for links in document %}
+    {% if links.title == page.title %}
+
+        {% unless forloop.first %}
+            {% assign prevurl = prev.url %}
+
+            {% assign prevtitle = prev.title %}
+        {% endunless %}
+
+        {% unless forloop.last %}
+            {% assign next = document[forloop.index] %}
+
+            {% assign nexturl = next.url %}
+
+            {% assign nexttitle = next.title %}
+        {% endunless %}
+    {% endif %}
+
+    {% assign prev = links %}
+{% endfor %}
+
+{% if prevurl or nexturl %}
+  <div class="pagination-links">
+    {% if prevurl %}
+      <div class="site-card__container site-card_inline">
+        <div class="usa-card__body usa-card_padding-sm">
+          <a href="{{prevurl}}" class="link_previous"><strong>Previous Resource</strong></a>
+        </div>
+      </div>
+    {% endif %}
+    {% if nexturl %}
+      <div class="site-card__container site-card_inline">
+        <div class="usa-card__body usa-card_padding-sm">
+          <a href="{{nexturl}}" class="link_next"><strong>Next Resource</strong></a>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

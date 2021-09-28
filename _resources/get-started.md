@@ -1,5 +1,4 @@
 ---
-layout: default
 
 # text to show on the card
 display-title: Get Started  
@@ -7,14 +6,13 @@ details: Get started with an introduction to major concepts in bias and AI/ML.
 
 # whether or not the card is "featured" on the /resources page or homepage
 featured: true
+order: 1
 
 # pills above the title on the card
 tags:
   - Primer
 
 ---
-
-# Getting Started
 
 ## Overview
 Bias is the systematic favoring or disfavoring of a specific group of people relative to another group. Bias can arise in every step of the decision-making process--for data driven decisions, the process by which you collect and treat data may introduce bias. The decision-making frameworks themselves, often driven by artificial intelligence or machine learning algorithms, can also be constructed in a way that introduces bias. The effects of bias can take many forms; a group that is being biased against may be less likely to receive resources that it otherwise should be allocated--think jobs, government benefits, and housing, among other things. 

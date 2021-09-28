@@ -10,6 +10,7 @@ agency-partners:
     href: https://www.census.gov/
 
 github: https://github.com/XDgov/data-generation-notebooks
+order: 3
 tags:
   - tool
 
