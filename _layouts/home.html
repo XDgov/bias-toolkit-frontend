@@ -2,28 +2,15 @@
 layout: base
 ---
 
-<div class="site-gradient">
-</div>
-
 {% assign buttons = page.hero.buttons %}
-<section class="padding-y-6">
+<section class="padding-y-6 site-hero">
   <div class="grid-container grid-row">
-    <div class="mobile-lg:grid-col-6">
-      <span class="site-heading site-heading--xs site-topper site-topper--accent">{{ page.hero.pre-header }}</span>
-      <h1 class="maxw-mobile margin-top-1">{{ page.hero.title }}</h1>
-      <p class="margin-bottom-4">{{ page.hero.subtitle }}</p>
+    <div class="tablet:grid-col-6">
+      <span class="site-heading"><strong>{{ page.hero.pre-header }}</strong></span>
+      <h1 class="margin-top-1 hero--heading">{{ page.hero.title }}</h1>
+      <p class="margin-bottom-4 hero--content">{{ page.hero.subtitle }}</p>
       {% assign button = buttons[0] %}
-      {% include button-link.html data=button %}
-    </div>
-    <div class="margin-top-3 mobile-lg:margin-top-0 mobile-lg:grid-col-4 mobile-lg:grid-offset-2" id="site-gradient__buttons">
-      <div class="">
-        {% assign button = buttons[1] %}
-        {% include button-link.html data=button %}
-      </div>
-      <div class="margin-top-3 mobile-lg:margin-top-0 mobile-lg:margin-bottom-10">
-        {% assign button = buttons[2] %}
-        {% include button-link.html data=button class="mobile-lg:float-right" %}
-      </div>
+      {% include button-link.html data=button class="site-button-link--large" %}
     </div>
   </div>
 </section>
