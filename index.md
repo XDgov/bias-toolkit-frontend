@@ -7,7 +7,7 @@ permalink: /
 
 hero:
   pre-header: Learn &#183; Build &#183; Connect
-  title: 'Bias Toolkit'
+  title: 'Introducing the Bias Toolkit'
   subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and mitigate bias in their data and algorithms.
   buttons:  # controls the 3 buttons in the top, hero section
     - text: "Get Started"

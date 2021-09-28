@@ -7,6 +7,7 @@ agency-partners:
     href: https://www.census.gov/
 
 github: https://github.com/XDgov/model-card-generator
+order: 2
 tags:
   - tool
 ---

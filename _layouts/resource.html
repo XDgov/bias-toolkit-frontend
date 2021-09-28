@@ -6,7 +6,7 @@ layout: default
 
 <p class="site-heading site-heading--xs">RESOURCE</p>
 {% if page.tags %}
-  <ul class="usa-collection__meta site-card__meta {% if page.featured %}site-card__meta--accent{% endif %}" aria-label="Topics">
+  <ul class="usa-collection__meta site-card__meta {% if page.featured and page.layout == 'resources-landing' %}site-card__meta--accent{% endif %}" aria-label="Topics">
     {% for tag in page.tags %}
       <li class="usa-collection__meta-item usa-tag">{{ tag | capitalize }}</li>
     {% endfor %}
@@ -48,14 +48,4 @@ layout: default
 
 {{ content }}
 
-{% if page.github %}
-  <div class="margin-top-6">
-    <a 
-      class="usa-link site-button-link"
-      href="{{ page.github }}"
-      target="_blank"
-      rel="noopener noreferrer">
-      Go to GitHub
-    </a>
-  </div>
-{% endif %}
+{% include pagination.html %}
