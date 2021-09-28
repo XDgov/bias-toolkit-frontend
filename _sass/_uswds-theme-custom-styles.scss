@@ -74,6 +74,10 @@ h2 {
    }
 }
 
+.resource-heading {
+   @include u-margin-top(0);
+}
+
 .site-heading {
    @include u-text('uppercase', 'normal');
    &--small {
@@ -239,12 +243,24 @@ h2 {
    }
 }
 
+.site-prose {
+   font-size: 1.1rem;
+   line-height: 1.6;
+}
+
 #site-gradient__buttons {
    @include at-media('mobile-lg') {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
    }
+}
+
+.site-version {
+   display: inline-block;
+   @include u-color('secondary');
+   @include u-font('sans', 'sm');
+   @include u-margin-left(5px);
 }
 
 .usa-card_padding-sm {
