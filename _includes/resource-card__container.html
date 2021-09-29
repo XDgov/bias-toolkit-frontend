@@ -1,9 +1,15 @@
 {% assign data = include.data %}
 <div class="usa-card__container site-card__container {% if data.featured %}site-card__container--accent{% endif %}">
   <header class="usa-card__header display-flex flex-column">
-    <h3 class="usa-card__heading font-sans-lg">
-      {{ data.display-title }}
-    </h3>
+    {% if data.featured %}
+      <h2 class="usa-card__heading font-sans-xlg">
+        {{ data.display-title }}
+      </h2>
+    {% else %}
+      <h3 class="usa-card__heading font-sans-lg">
+        {{ data.display-title }}
+      </h3>
+    {% endif %}
     {% if data.tags %}
       <ul class="usa-collection__meta site-card__meta {% if data.featured %}site-card__meta--accent{% endif %}" aria-label="Topics">
         {% for tag in data.tags %}
@@ -19,7 +25,7 @@
   </div>
   <div class="usa-card__footer margin-bottom-2">
     <a 
-      class="site-button-link {% if data.featured %}site-button-link--accent{% endif %}" 
+      class="site-button-link {% if data.featured %}site-button-link--accent font-sans-md{% endif %}" 
       href="{{site.baseurl}}{{ data.url }}">
       View Resource <span class="usa-sr-only">{{data.display-title}}</span>
     </a>

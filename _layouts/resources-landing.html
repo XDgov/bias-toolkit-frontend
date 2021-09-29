@@ -1,31 +1,34 @@
 ---
-layout: default
+layout: base
 
 # This is the layout for the /resources page. 
 # Displays a featured resource card and a row of three other "popular" cards below it
 ---
-{% if content %}
-  <section class="margin-bottom-6">
-    {{content}}
-  </section>
-{% endif %}
-
-{% assign featured = site.resources | where_exp: "tool", "tool.featured == true" | first %}
-<section class="margin-bottom-8">
-  <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "Introduction" }}</h2>
-  <div class="usa-card site-card site-card--featured">
-    {% include resource-card__container.html data=featured %}
+<section class="margin-bottom-6 resources-hero">
+  <div class="grid-container">
+    {% assign featured = site.resources | where_exp: "tool", "tool.featured == true" | first %}
+    <div class="usa-card site-card site-card--featured padding-top-6 padding-bottom-6">
+      {% include resource-card__container.html data=featured %}
+    </div>
   </div>
 </section>
 
-<section>
-  <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "Most Popular" }}</h2>
-  <ul class="usa-card-group">
-    {% assign nonFeatured = site.resources | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
-    {% for tool in nonFeatured %}
-      <li class="tablet:grid-col-4 usa-card site-card">
-        {% include resource-card__container.html data=tool %}
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="grid-container margin-y-10">
+  <section>
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </section>
+
+  <section>
+    <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "All Resources" }}</h2>
+    <ul class="usa-card-group">
+      {% assign nonFeatured = site.resources | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
+      {% for tool in nonFeatured %}
+        <li class="tablet:grid-col-4 usa-card site-card">
+          {% include resource-card__container.html data=tool %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

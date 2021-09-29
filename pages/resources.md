@@ -2,8 +2,6 @@
 layout: resources-landing
 permalink: /resources/
 
-featured-title: Featured Resource
-card-row-title: Most Popular
+display-title: Resources
+card-row-title: All Resources
 ---
-
-# Resources
