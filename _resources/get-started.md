@@ -2,7 +2,7 @@
 
 # text to show on the card
 display-title: Get Started  
-details: Get started with an introduction to major concepts in bias and AI/ML.
+details: Start here for an overview of bias and an introduction to major concepts.
 
 # whether or not the card is "featured" on the /resources page or homepage
 featured: true
