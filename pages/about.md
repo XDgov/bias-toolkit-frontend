@@ -4,6 +4,7 @@ permalink: /about/
 ---
 
 # About
+
 The Combating Bias Toolkit is designed to help AI/ML practitioners and managers identify,
 understand, and mitigate sources of bias in their data, algorithms, and processes. This toolkit
 is being made available publicly to disseminate tools and resources as broadly as possible
