@@ -5,7 +5,7 @@
   "license": "CC0-1.0",
   "engines" : { 
     "node" : "14.18.1"
-  }
+  },
   "scripts": {
     "federalist": "npm install && ./build.sh && npm run uswds-copy-assets && npm run uswds-build-sass",
     "jekyll-install": "gem install bundler && bundle install",
