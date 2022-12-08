@@ -5,8 +5,6 @@ primary:
         href: /resources
       - text: Get Started
         href: /resources/get-started
-      - text: Data Generation Notebooks
-        href: /resources/data-generation-notebooks
       - text: Mitigating Bias in Job Postings
         href: /resources/mitigating-bias-in-job-postings
       - text: Model Card Generator
