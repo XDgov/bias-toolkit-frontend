@@ -19,6 +19,9 @@
     "watch": "gulp watch",
     "test": "snyk test"
   },
+  "dependencies": {
+    "@uswds/uswds": "^3.5.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.3.2",
     "gulp": "^4.0.2",
@@ -33,7 +36,6 @@
     "postcss-csso": "^6.0.1",
     "sass": "^1.38.1",
     "snyk": "^1.521.0",
-    "@uswds/uswds": "^3.5.0",
     "@uswds/compile": "^1.0.0"
   }
 }
