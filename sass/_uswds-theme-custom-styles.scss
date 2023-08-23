@@ -7,15 +7,20 @@
 ========================================
 ========================================
 ----------------------------------------
-USWDS SASS GULPFILE
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
 ----------------------------------------
 */
 
-const uswds = require("@uswds/compile");
+@use "uswds-core" as *;
 
-uswds.settings.version = 3;
-
-exports.init = uswds.init;
-exports.compile = uswds.compile;
-exports.copyAssets = uswds.copyAssets;
-exports.updateUswds = uswds.updateUswds;
+// import xD custom styles
+@import '../_sass/styles.scss';
