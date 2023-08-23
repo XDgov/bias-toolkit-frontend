@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+# Note: when updating Ruby version, update .ruby-version file as well
 # to ensure Cloud.gov environment version of Ruby matches
 ruby '3.1.3'
 
