@@ -43,7 +43,7 @@ h2 {
 
    .link_previous {
       &::before {
-         background-image: url(../../uswds/img/angle-left-solid.svg);
+         background-image: url(../../extra-assets/img/angle-left-solid.svg);
          background-position: center;
          background-repeat: no-repeat;
          background-size: 16px 16px;
@@ -54,7 +54,7 @@ h2 {
 
    .link_next {
       &::after {
-         background-image: url(../../uswds/img/angle-right-solid.svg);
+         background-image: url(../../extra-assets/img/angle-right-solid.svg);
          background-position: center;
          background-repeat: no-repeat;
          background-size: 16px 16px;
@@ -136,7 +136,7 @@ h2 {
    }
    &::after {
       content: ' ';
-      background-image: url(../../uswds/img/angle-arrow-right-white.svg);
+      background-image: url(../../extra-assets/img/angle-arrow-right-white.svg);
       background-size: 14px 14px;
       background-position: center;
       background-repeat: no-repeat;
