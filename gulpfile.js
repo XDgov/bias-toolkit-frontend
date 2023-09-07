@@ -20,4 +20,5 @@ exports.watch = uswds.watch;
 exports.init = uswds.init;
 exports.update = uswds.updateUswds;
 exports.default = uswds.watch;
+exports.copyAssets = uswds.copyAssets;
 exports.updateUswds = uswds.updateUswds;
