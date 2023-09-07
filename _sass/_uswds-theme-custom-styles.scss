@@ -33,6 +33,10 @@ h2 {
    @include u-font('heading', '3xl');
 }
 
+.model-card-form {
+   max-width: 40rem;
+}
+
 .pagination-links {
    margin-top: 2rem;
 
@@ -264,6 +268,10 @@ h2 {
    @include u-margin-left(5px);
 }
 
+.tool-version {
+   @include u-color('gray');
+}
+
 .usa-card_padding-sm {
 
    &:only-child {
@@ -273,6 +281,12 @@ h2 {
    }
 }
 
-.model-card-form {
-   max-width: 40rem;
+.usa-input {
+   border-radius: 3px;
+}
+
+.usa-label-helper {
+   @include u-color('accent-cool-lighter'); 
+   display: block;
+   font-size: 0.9rem;
 }

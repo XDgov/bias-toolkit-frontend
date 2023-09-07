@@ -5,49 +5,12 @@ layout: default
 ---
 
 <article>
-  <p class="site-heading site-heading--xs">RESOURCE</p>
-  {% if page.tags %}
-    <ul class="usa-collection__meta site-card__meta {% if page.featured and page.layout == 'resources-landing' %}site-card__meta--accent{% endif %}" aria-label="Topics">
-      {% for tag in page.tags %}
-        <li class="usa-collection__meta-item usa-tag">{{ tag | capitalize }}</li>
-      {% endfor %}
-    </ul>
+  {% if page.version %}
+    <span class="tool-version">Version {{ page.version }}</span>
   {% endif %}
-
   <header>
     <h1 class="font-sans-3xl resource-heading">{{ page.display-title | default: page.title }}</h1>
-    <div class="grid-row flex-align-center">
-      {% if page.agency-partners %}
-        <div class="grid-col-6">
-          <span class="text-base text-sans-sm">Agency Partners:</span>
-          <span class="text-sans-sm">
-            {% for partner in page.agency-partners %}
-              <a 
-                class="usa-link" 
-                href="{{ partner.href }}"
-                target="_blank"
-                rel="noopener noreferrer">
-                {{ partner.text }}
-              </a>
-            {% endfor %}
-          </span>
-        </div>
-      {% endif %}
-      {% if page.github %}
-        <div class="mobile-lg:grid-col-6 margin-top-4 mobile-lg:margin-top-0">
-          <a 
-            class="usa-link site-button-link mobile-lg:float-right"
-            href="{{ page.github }}"
-            target="_blank"
-            rel="noopener noreferrer">
-            Go to GitHub
-          </a>
-        </div>
-      {% endif %}
-    </div>
   </header>
-
-  <h2>{{ page.details  }}</h2>
 
   {{ content }}
 </article>
