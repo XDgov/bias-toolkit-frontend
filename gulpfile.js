@@ -20,3 +20,4 @@ exports.watch = uswds.watch;
 exports.init = uswds.init;
 exports.update = uswds.updateUswds;
 exports.default = uswds.watch;
+exports.updateUswds = uswds.updateUswds;
