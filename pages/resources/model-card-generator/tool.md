@@ -23,7 +23,7 @@ version: 0.1
   </div>
   <div>
     <label class="usa-label" for="owners">
-      Enter names of model owners in a "+" separated list. 
+      Enter names of model owners in a "+" separated list.
       <span class="usa-label-helper">Example: Jane Doe, Ph.D. + John Smith</span>
     </label>
     <input class="usa-input" type="text" id="owners" data-md-title="Collaborators" data-md-type="ul">
@@ -36,7 +36,7 @@ version: 0.1
     <label class="usa-label" for="acquisition">
       How was the model acquired?
     </label>
-    <select name="acquisition" class="usa-select">
+    <select name="acquisition" class="usa-select" id="acquisition" data-md-title="Ownership" data-md-type="ul">
       <option value>- Select -</option>
       <option value="internally-built">Internally-built</option>
       <option value="internally-built">Off-the-shelf</option>
