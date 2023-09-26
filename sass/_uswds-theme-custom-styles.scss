@@ -41,14 +41,6 @@ h2 {
    max-width: 40rem;
 }
 
-.note-text {
-   text-decoration: underline;
-}
-
-.required-asterisk {
-   color: color('red-warm-50v');
-}
-
 .pagination-links {
    margin-top: 2rem;
 
@@ -298,7 +290,7 @@ h2 {
 }
 
 .usa-label-helper {
-   color: $accessible-gray;
+   color: $accessible-gray; 
    display: block;
    font-size: 0.9rem;
 }
