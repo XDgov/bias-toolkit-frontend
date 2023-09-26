@@ -14,29 +14,33 @@ version: 0.1
 <p>
 	This tool can be used to create a <a href="{{ page.resource.url }}">Model Card</a>: a way to share information about a model’s intent, data, architecture, and performance. Use the form below to generate a markdown (*.md) file version of a model card.
 </p>
+<p>
+<span class="note-text">Note</span>: A red asterisk (<span class="required-asterisk">*</span>) indicates a required field.
+</p>
 
 <form accept-charset="UTF-8" enctype="multipart/form-data" class="usa-form model-card-form" id="model-card-form">
   <h3>Overview</h3>
   <div>
-    <label class="usa-label" for="name">What is your model name?</label>
-    <input class="usa-input" type="text" id="name" data-md-title="ModelName" data-md-type="h1">
+    <label class="usa-label" for="name">What is your model name?<span class="required-asterisk">*</span></label>
+    <input class="usa-input" type="text" id="name" data-md-title="ModelName" data-md-type="h1" required>
   </div>
   <div>
     <label class="usa-label" for="owners">
-      Enter names of model owners in a "+" separated list.
+      Enter names of model owners in a "+" separated list.<span class="required-asterisk">*</span>
       <span class="usa-label-helper">Example: Jane Doe, Ph.D. + John Smith</span>
     </label>
-    <input class="usa-input" type="text" id="owners" data-md-title="Collaborators" data-md-type="ul">
+    <input class="usa-input" type="text" id="owners" data-md-title="Collaborators" data-md-type="ul" required>
   </div>
   <div>
-    <label class="usa-label" for="agencies">Enter affiliated agencies in a + seperated list. Example: xD + Census</label>
-    <input class="usa-input" type="text" id="agencies" data-md-title="Agency" data-md-type="ul">
+    <label class="usa-label" for="agencies">Enter affiliated agencies in a + separated list.<span class="required-asterisk">*</span>
+    <span class="usa-label-helper">Example: xD + Census</span></label>
+    <input class="usa-input" type="text" id="agencies" data-md-title="Agency" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="acquisition">
-      How was the model acquired?
+      How was the model acquired?<span class="required-asterisk">*</span>
     </label>
-    <select name="acquisition" class="usa-select" id="acquisition" data-md-title="Ownership" data-md-type="ul">
+    <select name="acquisition" class="usa-select" id="acquisition" data-md-title="Ownership" data-md-type="ul" required>
       <option value>- Select -</option>
       <option value="internally-built">Internally-built</option>
       <option value="internally-built">Off-the-shelf</option>
@@ -46,133 +50,133 @@ version: 0.1
   <h3>Anticipated Use</h3>
   <div>
     <label class="usa-label" for="user-agencies" id="user-agencies-label">
-      In which agencies will this model be used?
+      In which agencies will this model be used?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="user-agencies" data-md-title="label" data-md-type="ul" data-md-heading="Anticipated Use">
+    <input class="usa-input" type="text" id="user-agencies" data-md-title="label" data-md-type="ul" data-md-heading="Anticipated Use" required>
   </div>
   <div>
     <label class="usa-label" for="user-individuals" id="user-individuals-label">
-      Who are the intended users of the model?
+      Who are the intended users of the model?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="user-individuals" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="user-individuals" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="use-cases" id="use-cases-label">
-      What are the intended use cases of the model?
+      What are the intended use cases of the model?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="use-cases" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="use-cases" data-md-title="label" data-md-type="ul" required>
   </div>
   <h3>Model Information</h3>
   <div>
     <label class="usa-label" for="model-version" id="model-version-label">
-      What is the current model version?
+      What is the current model version?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="model-version" data-md-title="label" data-md-type="ul" data-md-heading="Model Information">
+    <input class="usa-input" type="text" id="model-version" data-md-title="label" data-md-type="ul" data-md-heading="Model Information" required>
   </div>
   <div>
     <label class="usa-label" for="release-date" id="release-date-label">
-      What is the version release date?
+      What is the version release date?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="release-date" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="release-date" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="changes" id="changes-label">
-      What changes have been made since the last release?
+      What changes have been made since the last release?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="changes" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="changes" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="license" id="license-label">
-      What is the license for use?
+      What is the license for use?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="license" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="license" data-md-title="label" data-md-type="ul" required>
   </div>
   <h3>Model Architecture</h3>
   <div>
     <label class="usa-label" for="algorithm" id="algorithm-label">
-      What type of algorithm is used?
+      What type of algorithm is used?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="algorithm" data-md-title="label" data-md-type="ul" data-md-heading="Model Architecture">
+    <input class="usa-input" type="text" id="algorithm" data-md-title="label" data-md-type="ul" data-md-heading="Model Architecture" required>
   </div>
   <div>
     <label class="usa-label" for="input-format" id="input-format-label">
-      How is the input data formatted?
+      How is the input data formatted?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="input-format" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="input-format" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="output-format" id="output-format-label">
-      How is the output data formatted?
+      How is the output data formatted?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="output-format" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="output-format" data-md-title="label" data-md-type="ul" required>
   </div>
   <h3>Datasets</h3>
   <div>
     <label class="usa-label" for="training-data-pii" id="training-data-pii-label">
-      Does the training dataset contain information related to individuals or human populations?
+      Does the training dataset contain information related to individuals or human populations?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="training-data-pii" data-md-title="label" data-md-type="ul" data-md-heading="Datasets">
+    <input class="usa-input" type="text" id="training-data-pii" data-md-title="label" data-md-type="ul" data-md-heading="Datasets" required>
   </div>
   <div>
     <label class="usa-label" for="data-source" id="data-source-label">
-      What is the source(s) of the training data?
+      What is the source(s) of the training data?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="data-source" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="data-source" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="data-collection" id="data-collection-label">
-      How was this data collected or generated?
+      How was this data collected or generated?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="data-collection" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="data-collection" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="data-variables" id="data-variables-label">
-      What variables are contained in this dataset?
+      What variables are contained in this dataset?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="data-variables" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="data-variables" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="entry-count" id="entry-count-label">
-      How many entries are contained in your dataset?
+      How many entries are contained in your dataset?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="entry-count" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="entry-count" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="validation-percent" id="validation-percent-label">
-      What percent of data is chosen as a validation set?
+      What percent of data is chosen as a validation set?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="validation-percent" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="validation-percent" data-md-title="label" data-md-type="ul" required>
   </div>
   <h3>Performance Metrics</h3>
   <div>
     <label class="usa-label" for="metrics" id="metrics-label">
-      What metrics are used to rate model performance?
+      What metrics are used to rate model performance?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="metrics" data-md-title="label" data-md-type="ul" data-md-heading="Performance Metrics">
+    <input class="usa-input" type="text" id="metrics" data-md-title="label" data-md-type="ul" data-md-heading="Performance Metrics" required>
   </div>
   <div>
     <label class="usa-label" for="metric-reporting" id="metric-reporting-label">
-      How are the metrics being reported?
+      How are the metrics being reported?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="metric-reporting" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="metric-reporting" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="confidence-interval" id="confidence-interval-label">
-      What is the confidence interval of these metrics?
+      What is the confidence interval of these metrics?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="confidence-interval" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="confidence-interval" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="decision-threshold" id="decision-threshold-label">
-      What decision threshold was used to compute the metric?
+      What decision threshold was used to compute the metric?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="decision-threshold" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="decision-threshold" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="performance-limit" id="performance-limit-label">
-      What factors limit the model's performance?
+      What factors limit the model's performance?<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="performance-limit" data-md-title="label" data-md-type="ul">
+    <input class="usa-input" type="text" id="performance-limit" data-md-title="label" data-md-type="ul" required>
   </div>
   <h3 data-md-title="Bias" data-md-type="h2">Bias</h3>
   <div>
