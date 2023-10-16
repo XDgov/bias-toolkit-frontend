@@ -1,5 +1,6 @@
 <script>
 	const modelCardSubmitForm = document.getElementById("model-card-form");
+	const projectVersion = 0.1;
 	modelCardSubmitForm.addEventListener("submit", startDownload);
 	let filename = "model-card";
 
@@ -14,8 +15,12 @@
 	  event.preventDefault();
 	  const anchor = document.createElement("a");
 	  const formData = collectFormData();
-	  const modelCardData = formData.join("\r\n");
+		// add origin note and link
+		const projectLink = 'https://bias/xd.gov/resources/model-card-generator/tool/';
+		const originNote = `This model card was generated with the Bias Toolkit Model Card Generator version ${projectVersion}. To learn more, visit ${projectLink}.`;
+		formData.push([originNote]);
 
+		const modelCardData = formData.join("\r\n");
 	  const downloadedBlob = new Blob([modelCardData], { type: "text/markdown" });
 
 	  const url = window.URL.createObjectURL(downloadedBlob);
