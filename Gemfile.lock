@@ -86,11 +86,11 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
   jekyll-sitemap
-  uswds-jekyll (~> 5.2)
+  uswds-jekyll (~> 5.5.0)
   webrick
 
 RUBY VERSION
-   ruby 3.1.3p185
+   ruby 3.2.0p0
 
 BUNDLED WITH
    2.2.25

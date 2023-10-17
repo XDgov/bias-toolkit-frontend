@@ -16,7 +16,7 @@
     "uswds-copy-img": "gulp copy-uswds-images",
     "uswds-copy-js": "gulp copy-uswds-js",
     "uswds-update": "npm update uswds && ./build.sh",
-    "watch": "gulp watch",
+    "watch": "npx gulp watch",
     "test": "snyk test"
   },
   "dependencies": {

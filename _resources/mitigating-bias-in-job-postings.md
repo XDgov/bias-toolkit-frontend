@@ -12,7 +12,6 @@ tags:
   - website
   - tool
 ---
-### Overview
 Ableist language is language that is offensive to people with disability. This type of language in job descriptions can cause people with disabilities to feel excluded from jobs that they are qualified for, which may result in a biased applicant pool.
 
 To address this potential source of bias, xD partnered with the U.S. Department of Labor’s Office of Disability Employment Policy (DOL ODEP) to develop a natural language processing-powered tool that will allow a user (for example: a hiring manager, human resources specialist, or a recruiter, among others) to check a job posting for ableist language. The tool identifies ableist language in the text and recommends alternative language to make the posting more inclusive for persons with disabilities. 

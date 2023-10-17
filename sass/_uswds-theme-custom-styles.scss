@@ -22,5 +22,283 @@ i.e.
 
 @use "uswds-core" as *;
 
-// import xD custom styles
-@import '../_sass/styles.scss';
+$accessible-gray: #595959;
+
+h2 {
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+}
+
+.hero--content {
+   @include u-font('sans', 'lg');
+}
+
+.hero--heading {
+   @include u-font('heading', '3xl');
+}
+
+.model-card-form {
+   max-width: 40rem;
+}
+
+.note-text {
+   text-decoration: underline;
+}
+
+.required-asterisk {
+   color: color('red-warm-50v');
+}
+
+.pagination-links {
+   margin-top: 2rem;
+
+   a {
+      &::after {
+      }
+   }
+
+   .link_previous {
+      &::before {
+         background-image: url(../../extra-assets/img/angle-left-solid.svg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 16px 16px;
+         content: ' ';
+         padding: 14px 0 14px 14px;
+      }
+   }
+
+   .link_next {
+      &::after {
+         background-image: url(../../extra-assets/img/angle-right-solid.svg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 16px 16px;
+         content: ' ';
+         padding: 14px 0 14px 14px;
+      }
+   }
+
+   div {
+      margin-right: 1rem;
+
+      &:last-child {
+         margin-right: 0
+      }
+   }
+}
+
+.resource-heading {
+   @include u-margin-top(0);
+}
+
+.resources-hero {
+   background-image: linear-gradient(to right, #492c6b 0%, #517fa4 100%);
+}
+
+.site-heading {
+   @include u-text('uppercase', 'normal');
+   &--small {
+      @include u-font('sans', 'xs')
+   }
+   &--xs {
+      @include u-font('sans', '2xs')
+   }
+}
+
+.site-topper {
+   @include u-margin-top(0);
+   position: relative;
+   &::before {
+      content: '';
+      @include u-bg('primary');
+      height: 8px;
+      width: 50px;
+      position: absolute;
+      top: -13px;
+   }
+   &--accent {
+      @extend .site-topper;
+      &::before {
+         @include u-bg('accent-cool-lighter');
+      }
+   }
+}
+
+.site-button-link {
+   @include u-padding-x(1.5);
+   @include u-padding-y(1);
+   @include u-radius('pill');
+   @include u-bg('white');
+   text-decoration: none;
+   @include u-text('bold');
+   @include u-border(2px, 'solid', 'primary');
+   @include u-color('primary');
+   display: inline-block;
+   width: max-content;
+   &:visited {
+      border-color: color('violet-70v');
+      &::after {
+         background-color: color('violet-70v');
+      }
+   }
+   &:hover, &:active {
+      @include u-border('primary-dark');
+      @include u-color('primary-dark');
+      &::after {
+         @include u-margin-left('105');
+         @include u-bg('primary-dark');
+      }
+   }
+   &::after {
+      content: ' ';
+      background-image: url(../../extra-assets/img/angle-arrow-right-white.svg);
+      background-size: 14px 14px;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0 0.65em;
+      @include u-bg('primary');
+      @include u-radius('pill');
+      color: white;
+      @include u-margin-left(1);
+      transition: all 100ms ease;
+   }
+
+   &--accent {
+      @include u-border(0);
+      @include u-color('secondary');
+      &::after {
+         @include u-bg('accent-cool-lighter');
+         @include u-color('white');
+      }
+      &:hover, &:active {
+         @include u-color('secondary-dark');
+         &::after {
+            @include u-bg('accent-cool-light');
+         }
+      }
+      &:visited {
+         &::after {
+            @include u-bg('accent-cool-light');
+         }
+      }
+   }
+
+   &--large {
+      @include u-font('sans', 'md');
+      @include u-padding-x(2.5);
+      @include u-padding-y(2);
+   }
+}
+
+.site-card__container {
+   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.25);
+   @include u-radius('md');
+
+   &--accent {
+      @include u-margin-x(0);
+      background-color: lighten(#d7d7f7, 5);
+   }
+
+   // prevent button overflow b/w 640 and 800 pixels by scooting left slightly
+   .site-button-link {
+      @include at-media('tablet') {
+         @include u-margin-left('neg-2');
+      }
+      @include at-media('tablet-lg') {
+         @include u-margin-left(0);
+      }
+   }
+}
+
+.site-card_inline {
+   display: inline-block;
+}
+
+.site-card__meta {
+   order: -1;
+   @include u-margin-bottom(2, !important);
+   .usa-tag  {
+      @include u-padding-x(1.5);
+      @include u-padding-y(1);
+      @include u-radius('pill');
+      @include u-bg('accent-cool-lighter');
+      @include u-text('bold');
+   }
+
+   &--accent {
+      .usa-tag {
+         background-color: white;
+         @include u-color('secondary');
+      }
+   }
+}
+
+.site--centered {
+   width: max-content;
+   @include u-margin-x('auto');
+}
+
+.site-hero {
+   background-image: linear-gradient(to right, #492c6b 0%, #517fa4 100%);
+   color: white !important;
+   padding-top: 3rem;
+
+   @include at-media('tablet') {
+      min-height: 500px;
+      padding-top: 6rem;
+   }
+
+   @include at-media('desktop') {
+      min-height: 600px;
+      padding-top: 8rem;
+   }
+
+   .grid-container {
+      justify-content: space-around;
+      text-align: center;
+   }
+}
+
+.site-prose {
+   font-size: 1.1rem;
+   line-height: 1.6;
+}
+
+#site-gradient__buttons {
+   @include at-media('mobile-lg') {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}
+
+.site-version {
+   display: inline-block;
+   @include u-color('secondary');
+   @include u-font('sans', 'sm');
+   @include u-margin-left(5px);
+}
+
+.tool-version {
+   color: $accessible-gray;
+}
+
+.usa-card_padding-sm {
+
+   &:only-child {
+      padding: 1rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+   }
+}
+
+.usa-input {
+   border-radius: 3px;
+}
+
+.usa-label-helper {
+   color: $accessible-gray;
+   display: block;
+   font-size: 0.9rem;
+}
