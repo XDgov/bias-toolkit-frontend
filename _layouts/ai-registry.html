@@ -1,0 +1,31 @@
+---
+layout: default
+
+# Layout for a tool belonging to a Resource
+---
+
+<article>
+  {% if page.version %}
+    <span class="tool-version">Version {{ page.version }}</span>
+  {% endif %}
+  <header>
+    <h1 class="font-sans-3xl resource-heading">{{ page.display-title | default: page.title }}</h1>
+  </header>
+
+  <p>
+    The xD Artificial Intelligence (AI) Register is an overview of the AI and Machine Learning (ML) models used by the xD within the Census Bureau. It is meant to act as window into the groundbreaking work being done at xD to utlizie robust, fair and trustworthy AI/ML models for public service.  Through the register, you can get familiarized with a quick overview of xD's AI/ML systems or examine these systems in a more deatailed manner based on your own interests. You can also give feedback and thus participate in building human-centered algorithms .
+  </p>
+  <h3>Artificial intelligence systems at xD</h3>
+  <p>
+    Learn about the use cases where we currently utilize artificial intelligence & machine learning models as part of our work.
+  </p>
+</article>
+<h2>Selected Models</h2>
+<ul class="usa-list--unstyled margin-top-1">
+  {% assign aiModels = site.ai_models %}
+  {% for model in aiModels %}
+    <li>
+      {% include model-card__container.html data=model %}
+    </li>
+  {% endfor %}
+</ul>
