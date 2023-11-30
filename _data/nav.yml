@@ -9,18 +9,20 @@ primary:
         href: /resources/mitigating-bias-in-job-postings
       - text: Model Card Generator
         href: /resources/model-card-generator
+      - text: xD AI Registry
+        href: /resources/ai-registry
   - text: About
     href: /about
 
 footer:
   title: Helpful Links
-  links: 
+  links:
     - text: Privacy Policy
-      href: 'https://www.census.gov/about/policies/privacy.html'
+      href: "https://www.census.gov/about/policies/privacy.html"
       isExternal: true
     - text: Accessibility
-      href: 'https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility'
+      href: "https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility"
       isExternal: true
     - text: Github
-      href: 'https://github.com/XDgov/bias-toolkit-frontend'
+      href: "https://github.com/XDgov/bias-toolkit-frontend"
       isExternal: true
