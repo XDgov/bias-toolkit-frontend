@@ -15,7 +15,7 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
 <h3>Accountability</h3>
 <ul>
   <li>Model name : Language-Income Classification</li>
-  <li>Point of contact(s) and affiliations : Atul Rawal, Ph.D (xD) ; Sandy L Dietrich, Ph.D (SEHSD) ; James McCoy (CDO) </li>
+  <li>Point of contact(s) and affiliations : Atul Rawal, Ph.D (xD) ; Sandy L Dietrich, Ph.D (SEHSD) ; James McCoy (xD)</li>
   <li>Model acquisition/development method : Internally built by Atul Rawal, Sandy L Dietrich & James McCoy</li>
 </ul>
 <h3>Anticipated Use</h3>
