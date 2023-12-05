@@ -6,7 +6,7 @@
         {{ data.display-title }}
       </h2>
     {% else %}
-      <h3 class="usa-card__heading font-sans-lg">
+      <h3 class="usa-card__heading font-mono-xl">
         {{ data.display-title }}
       </h3>
     {% endif %}
@@ -17,8 +17,13 @@
         {% endfor %}
       </ul>
     {% endif %}
+    {% if data.last-update %}
+      <div class="padding-y-2 font-sans-lg">
+        <span class="note-text">Last updated</span>: {{ data.last-update | date_to_string: "ordinal", "US"}}
+      </div>
+    {% endif %}
   </header>
-  <div class="usa-card__body">
+  <div class="usa-card__body font-sans-lg">
     <p>
       {{ data.description }}
     </p>
