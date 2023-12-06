@@ -15,10 +15,10 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
 
 <h2>Detailed Information</h2>
 
-<h3>Accountability</h3>
+<h3>Overview</h3>
 <ul>
   <li><span class="text-bold text-underline">Model name</span>: Language-Income Classification</li>
-  <li><span class="text-bold text-underline">Point of contact(s) and affiliations</span>:
+  <li><span class="text-bold text-underline">Model author(s) and affiliations </span>(inquiries can be sent to <a href="mailto:inquiries@xd.gov">inquiries@xd.gov</a>):
     <ul>
       <li>Atul Rawal, Ph.D (xD - Office of Deputy Director)</li>
       <li>Sandy L Dietrich, Ph.D (Social, Economic, and Housing Statistics Division)</li>
@@ -32,21 +32,27 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
   <li><span class="text-bold text-underline">Division(s)using the model</span>: xD & SEHSD</li>
   <li><span class="text-bold text-underline">Intended application(s) and stakeholder(s) of the model</span>: Research studies for language equity in the US by xD & SEHSD</li>
 </ul>
-<h3>Model Information & Architecture</h3>
+<h3>Model Information</h3>
 <ul>
   <li><span class="text-bold text-underline">Current model version and release date</span>: V1, released on 11/3/2023</li>
   <li><span class="text-bold text-underline">Changes made since the last release. (If any)</span>: N/A</li>
   <li><span class="text-bold text-underline">License for use</span>: N/A </li>
   <li><span class="text-bold text-underline">Type of model (Classification or Regression)</span>: Classification</li>
+</ul>
+<h3>Model Architecture</h3>
+<ul>
   <li><span class="text-bold text-underline">Type of algorithm used</span>: Multiple ( RF, LR, GBR, LGBM, XGB, CatBoost & CNN)</li>
 </ul>
-<h3>Data & Performance</h3>
+<h3>Datasets</h3>
 <ul>
   <li><span class="text-bold text-underline">Source(s) of the training data</span>: IPUMS data repository for ACS data</li>
   <li><span class="text-bold text-underline">Data collection/ generation method</span>: Data downloaded form IPUMS for 2015 - 2019 period</li>
   <li><span class="text-bold text-underline">Number of variables in this dataset</span>: 16</li>
   <li><span class="text-bold text-underline">Number of entries in your dataset</span>: 500,000</li>
   <li><span class="text-bold text-underline">Percent of data chosen as a training, testing and validation set</span>: 80% training & 20% testing</li>
+</ul>
+<h3>Performance Metrics</h3>
+<ul>
   <li><span class="text-bold text-underline">Metrics used to rate model performance</span>:
     <ul>
       <li>Accuracy</li>
@@ -54,9 +60,10 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
       <li>recall</li>
       <li>F1-score</li>
     </ul>
+  </li>
   <li><span class="text-bold text-underline">Factors that limit the model's performance (Example: Limited dataset, Number of Nulls/NAs) (If any)</span>: N/A</li>
 </ul>
-<h3>Bias Identification & Mitigation</h3>
+<h3>Bias</h3>
 <ul>
   <li><span class="text-bold text-underline">Inclusion of information related to individuals or human populations in the training/testing/validation dataset</span>: Yes, sensitive attributes such as age, sex, race and ethnicity</li>
   <li><span class="text-bold text-underline">Degree of risk of human judgement injecting bias within the workflow</span>: N/A</li>
