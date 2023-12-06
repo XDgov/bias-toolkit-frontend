@@ -63,7 +63,7 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
   <li><span class="text-bold text-underline">Source(s) of the training data</span>: IPUMS data repository for ACS data</li>
   <li><span class="text-bold text-underline">Data collection/ generation method</span>: Data downloaded form IPUMS for 2015 - 2019 period</li>
   <li><span class="text-bold text-underline">Number of variables in this dataset</span>: 16</li>
-  <li><span class="text-bold text-underline">Number of entries in your dataset</span>: 500,000</li>
+  <li><span class="text-bold text-underline">Number of entries in this dataset</span>: 500,000</li>
   <li><span class="text-bold text-underline">Percent of data chosen as a training, testing and validation set</span>: 80% training & 20% testing</li>
 </ul>
 <div class="display-flex flex-row flex-align-stretch margin-top-5">
