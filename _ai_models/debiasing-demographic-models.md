@@ -35,7 +35,7 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
   <h3 class="margin-0">Anticipated Use</h3>
 </div>
 <ul>
-  <li><span class="text-bold">Division(s)using the model</span>: xD & Social, Economic, and Housing Statistics Division</li>
+  <li><span class="text-bold">Division(s)using the model</span>: xD & SEHSD</li>
   <li><span class="text-bold">Intended application(s) and stakeholder(s) of the model</span>: Research studies for language equity in the US by xD & SEHSD</li>
 </ul>
 <div class="display-flex flex-row flex-align-stretch margin-top-5">
