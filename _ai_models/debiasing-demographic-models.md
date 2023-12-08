@@ -74,8 +74,8 @@ Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous adva
   <li><span class="text-bold">Metrics used to rate model performance</span>:
     <ul>
       <li>Accuracy</li>
-      <li>precision</li>
-      <li>recall</li>
+      <li>Precision</li>
+      <li>Recall</li>
       <li>F1-score</li>
     </ul>
   </li>
