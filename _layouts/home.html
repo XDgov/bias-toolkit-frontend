@@ -29,7 +29,7 @@ layout: base
   <div class="grid-container grid-row">
     <h2 class="site-topper">{{ page.resources-section.title }}</h2>
     <ul class="usa-card-group">
-      {% assign popularTools = site.resources | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
+      {% assign popularTools = site.resources | where_exp: "tool", "tool.featured == nil or tool.featured == false" | sort: "order" %}
       {% for tool in popularTools %}
         <li class="tablet:grid-col-4 usa-card site-card">
           {% include resource-card__container.html data=tool %}

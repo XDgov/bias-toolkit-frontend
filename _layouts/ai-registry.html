@@ -1,0 +1,29 @@
+---
+layout: default
+
+# Layout for a tool belonging to a Resource
+---
+
+<article>
+  {% if page.version %}
+    <span class="tool-version">Version {{ page.version }}</span>
+  {% endif %}
+  <header>
+    <h1 class="font-sans-3xl resource-heading">{{ page.display-title | default: page.title }}</h1>
+  </header>
+
+  <p>
+    The Artifical Intelligence (AI) Registry is an overview of AI and machine learning (ML) models being used at the U.S. Census Bureau. This Registry can be used to review publicly available AI projects at the Census Bureau, to provide feedback on each model, or to use each model for your own research.
+  </p>
+</article>
+<h2>All Models</h2>
+<ul class="usa-list--unstyled margin-top-1">
+  {% assign aiModels = site.ai_models %}
+  {% for model in aiModels %}
+    <li>
+      {% include model-card__container.html data=model %}
+    </li>
+  {% endfor %}
+</ul>
+
+{% include pagination.html %}

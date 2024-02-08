@@ -1,0 +1,16 @@
+---
+layout: default
+
+# Layout for a tool belonging to a Resource
+---
+
+<article>
+  {% if page.version %}
+    <span class="tool-version">Version {{ page.version }}</span>
+  {% endif %}
+  <header>
+    <h1 class="font-sans-3xl resource-heading">{{ page.display-title | default: page.title }}</h1>
+  </header>
+
+  {{ content }}
+</article>
