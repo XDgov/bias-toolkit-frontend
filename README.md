@@ -20,3 +20,9 @@ SASS files are kept in the `/_sass` directory. To watch for changes and recompil
 ```
 npm run watch
 ```
+
+## Analytics
+
+The file `_includes/head.html` contains script tags for the following analytics tools:
+[Digital Analytics Program](https://digital.gov/guides/dap/)
+[Google Analytics](https://marketingplatform.google.com/about/analytics/)
