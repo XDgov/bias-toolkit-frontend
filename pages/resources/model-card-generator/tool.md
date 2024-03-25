@@ -50,7 +50,7 @@ version: 0.1
   <h3>Anticipated Use</h3>
   <div>
     <label class="usa-label" for="user-agencies" id="user-agencies-label">
-      Division(s)using the model<span class="required-asterisk">*</span>
+      Division(s) using the model<span class="required-asterisk">*</span>
     </label>
     <input class="usa-input" type="text" id="user-agencies" data-md-title="label" data-md-type="ul" data-md-heading="Anticipated Use" required>
   </div>
