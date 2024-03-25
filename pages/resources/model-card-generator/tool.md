@@ -93,13 +93,13 @@ version: 0.1
   </div>
   <div>
     <label class="usa-label" for="model-type" id="model-type-label">
-      Type of Model (Classification or Regression)<span class="required-asterisk">*</span>
+      Type of Model (Classification, Regression, Object Detection, etc.)<span class="required-asterisk">*</span>
     </label>
     <input class="usa-input" type="text" id="model-type" data-md-title="label" data-md-type="ul" data-md-heading="Model Architecture" required>
   </div>
   <div>
     <label class="usa-label" for="algorithm" id="algorithm-label">
-      Type of algorithm used<span class="required-asterisk">*</span>
+      Type of algorithm(s) used<span class="required-asterisk">*</span>
     </label>
     <input class="usa-input" type="text" id="algorithm" data-md-title="label" data-md-type="ul" data-md-heading="Model Architecture" required>
   </div>
