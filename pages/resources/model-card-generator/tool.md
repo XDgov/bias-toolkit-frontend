@@ -77,7 +77,7 @@ version: 0.1
     <label class="usa-label" for="release-date" id="release-date-label">
       Version release date<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="release-date" data-md-title="label" data-md-type="ul" required>
+    <input class="usa-input" type="date" id="release-date" data-md-title="label" data-md-type="ul" required>
   </div>
   <div>
     <label class="usa-label" for="changes" id="changes-label">
@@ -89,7 +89,15 @@ version: 0.1
     <label class="usa-label" for="license" id="license-label">
       License for use<span class="required-asterisk">*</span>
     </label>
-    <input class="usa-input" type="text" id="license" data-md-title="label" data-md-type="ul" required>
+    <select name="acquisition" class="usa-select" id="license" data-md-title="Ownership" data-md-type="ul" required>
+      <option value>- Select -</option>
+      <option value="apache-2.0">Apache license 2.0</option>
+      <option value="mit">MIT</option>
+      <option value="gpl-3.0">GNU General Public License v3.0</option>
+      <option value="mpl-2.0">Mozilla Public License 2.0</option>
+      <option value="unknown">Unknown</option>
+      <option value="other">Other</option>
+    </select>
   </div>
   <div>
     <label class="usa-label" for="model-type" id="model-type-label">
