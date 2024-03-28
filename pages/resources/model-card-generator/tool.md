@@ -15,6 +15,9 @@ version: 0.1
 	This tool can be used to create a <a href="{{ page.resource.url }}">Model Card</a>: a way to share information about a model’s intent, data, architecture, and performance. Use the form below to generate a markdown (*.md) file version of a model card.
 </p>
 <p>
+  The data you enter here is not saved or sent to a server. This is an entirely client-side feature.
+</p>
+<p>
   <span class="note-text">Note</span>: A red asterisk (<span class="required-asterisk">*</span>) indicates a required field.
 </p>
 
