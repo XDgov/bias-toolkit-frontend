@@ -63,7 +63,7 @@ function collectFormData() {
 		formRows.push(`${markdownMap['h1']} ${filename}`);
 		} else {
 		formRows.push(`${markdownMap[labelMdType]} ${mdTitle}`);
-		formRows.push(`${markdownMap[mdType]} ${input.value}`);
+		formRows.push(`${markdownMap[mdType]} ${value}`);
 		}
 	}
 	});
