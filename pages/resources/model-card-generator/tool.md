@@ -203,5 +203,4 @@ version: 0.1
   </div>
 </form>
 <button type="submit" form="model-card-form" id="form-btn" class="usa-button">Create Model Card Markdown File</button>
-
-{% include model-card-js.html %}
+<script src="{{ site.baseurl }}/javascript/model-card-generator.js"></script>
