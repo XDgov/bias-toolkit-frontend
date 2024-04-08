@@ -1,5 +1,5 @@
 const modelCardSubmitForm = document.getElementById("model-card-form");
-const projectVersion = 0.1;
+const projectVersion = 0.2;
 modelCardSubmitForm.addEventListener("submit", startDownload);
 let filename = "model-card";
 

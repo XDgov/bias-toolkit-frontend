@@ -9,7 +9,7 @@ resource:
   url: /resources/model-card-generator/
 tags:
   - Tool
-version: 0.1
+version: 0.2
 ---
 <p>
 	This tool can be used to create a <a href="{{ page.resource.url }}">Model Card</a>: a way to share information about a model’s intent, data, architecture, and performance. Use the form below to generate a markdown (*.md) file version of a model card.
@@ -98,8 +98,9 @@ version: 0.1
       <option value="mit">MIT</option>
       <option value="gpl-3.0">GNU General Public License v3.0</option>
       <option value="mpl-2.0">Mozilla Public License 2.0</option>
-      <option value="unknown">Unknown</option>
       <option value="other">Other</option>
+      <option value="none">None</option>
+      <option value="unknown">Unknown</option>
     </select>
   </div>
   <div>
@@ -160,15 +161,9 @@ version: 0.1
   <h3 data-md-title="Bias" data-md-type="h2">Bias Identification & Mitigation</h3>
   <div>
     <label class="usa-label" for="individual-population-information" id="individual-population-information-label">
-      Inclusion of information related to individuals or human populations in the training/testing/validation datasets
+      Inclusion of information related to individuals or human populations in the training/testing/validation datasets - Yes/No, <br> if "yes" include a description of demographic features
     </label>
     <textarea class="usa-textarea content-textarea" type="text" id="individual-population-information" data-md-title="label" data-md-type="ul" required></textarea>
-  </div>
-  <div>
-    <label class="usa-label" for="human-judgement" id="human-judgement-label">
-      Degree of risk of human judgement injecting bias within the workflow
-    </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="human-judgement" data-md-title="label" data-md-type="ul" required></textarea>
   </div>
   <div>
     <label class="usa-label" for="minimize-bias" id="minimize-bias-label">

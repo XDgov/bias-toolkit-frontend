@@ -26,3 +26,7 @@ npm run watch
 The file `_includes/head.html` contains script tags for the following analytics tools:
 [Digital Analytics Program](https://digital.gov/guides/dap/)
 [Google Analytics](https://marketingplatform.google.com/about/analytics/)
+
+## Community Contributions
+
+User feedback is welcome! If you would like to suggest edits or additions to features such as the model card generator, please create a [new issue](https://github.com/XDgov/bias-toolkit-frontend/issues) or [open a pull-request](https://github.com/XDgov/bias-toolkit-frontend/pulls).
