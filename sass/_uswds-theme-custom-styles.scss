@@ -39,6 +39,15 @@ h2 {
 
 .model-card-form {
    max-width: 40rem;
+
+   .content-textarea {
+      border-radius: 0.2rem;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      height: 4rem;
+      max-height: 200px;
+      width: 100%;
+   }
 }
 
 .note-text {
@@ -47,6 +56,7 @@ h2 {
 
 .required-asterisk {
    color: color('red-warm-50v');
+   color: 1.2rem;
 }
 
 .pagination-links {
