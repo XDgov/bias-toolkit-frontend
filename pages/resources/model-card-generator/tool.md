@@ -163,38 +163,38 @@ version: 0.2
     <label class="usa-label" for="individual-population-information" id="individual-population-information-label">
       Inclusion of information related to individuals or human populations in the training/testing/validation datasets - Yes/No, <br> if "yes" include a description of demographic features
     </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="individual-population-information" data-md-title="label" data-md-type="ul" required></textarea>
+    <textarea class="usa-textarea content-textarea" type="text" id="individual-population-information" data-md-title="label" data-md-type="ul"></textarea>
   </div>
   <div>
     <label class="usa-label" for="minimize-bias" id="minimize-bias-label">
       Methods used to minimize bias from human judgement
     </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="minimize-bias" data-md-title="label" data-md-type="ul" required></textarea>
+    <textarea class="usa-textarea content-textarea" type="text" id="minimize-bias" data-md-title="label" data-md-type="ul"></textarea>
   </div>
   <div>
     <label class="usa-label" for="potential-bias" id="potential-bias-label">
       Potential biases found in the training dataset from collection methods, sample size, representation, etc.
     </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="potential-bias" data-md-title="label" data-md-type="ul" required></textarea>
+    <textarea class="usa-textarea content-textarea" type="text" id="potential-bias" data-md-title="label" data-md-type="ul"></textarea>
   </div>
   <div>
     <label class="usa-label" for="bias-eval-tools" id="bias-eval-tools-label">
       Testing/evaluation performed to look for bias in the workflow of the model
     </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="bias-eval-tools" data-md-title="label" data-md-type="ul" required></textarea>
+    <textarea class="usa-textarea content-textarea" type="text" id="bias-eval-tools" data-md-title="label" data-md-type="ul"></textarea>
   </div>
   <div>
     <label class="usa-label" for="explainability-transparency" id="explainability-transparency-label">
       Degree of model explainability/transparency
     </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="explainability-transparency" data-md-title="label" data-md-type="ul" required></textarea>
+    <textarea class="usa-textarea content-textarea" type="text" id="explainability-transparency" data-md-title="label" data-md-type="ul"></textarea>
   </div>
   <h3 data-md-title="Bias" data-md-type="h2">Governance/Compliance</h3>
   <div>
     <label class="usa-label" for="compliance" id="compliance-label">
       Model/dataset compliance with existing laws and regulations (including privacy protection regulations)
     </label>
-    <textarea class="usa-textarea content-textarea" type="text" id="compliance" data-md-title="label" data-md-type="ul" required></textarea>
+    <textarea class="usa-textarea content-textarea" type="text" id="compliance" data-md-title="label" data-md-type="ul"></textarea>
   </div>
 </form>
 <button type="submit" form="model-card-form" id="form-btn" class="usa-button">Create Model Card Markdown File</button>
