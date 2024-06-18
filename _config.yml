@@ -6,6 +6,9 @@ collections:
   resources:
     output: true
     permalink: /resources/:name/
+  ai_models:
+    output: true
+    permalink: /ai-models/:name/
 
 defaults:
   - scope:
