@@ -82,7 +82,7 @@ GEM
       jekyll (>= 4.0, < 5)
       jekyll-autoprefixer
       mini_racer
-    webrick (1.8.1)
+    webrick (1.8.2)
 
 PLATFORMS
   arm64-darwin-22
